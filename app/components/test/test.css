@@ -1,0 +1,128 @@
+.testimonal {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: var(--quaternaryBg);
+}
+.testimonal .heading {
+  font-size: 36px;
+  color: var(--text);
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.testimonal p {
+  font-weight: 400;
+  color: var(--subText);
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.container-para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-para span {
+  text-align: center;
+  color: var(--primaryClr);
+  line-height: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+}
+.container-para svg {
+  margin-left: 5px;
+}
+.card-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 25px 35px;
+  border: 1px solid var(--quaternaryBg);
+  background: var(--primaryBg);
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 15px 35px var(--boxShadow);
+}
+.card-profile-rating {
+  display: flex;
+  align-items: center;
+}
+.card-profile img {
+  width: 56;
+  height: 56px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.card-rating .t39Star {
+  color: var(--growwYellow);
+  margin-right: 7px;
+}
+.card-review {
+  margin-top: 20px;
+  color: var(--text) !important;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+}
+.card-author {
+  margin-top: 20px;
+  color: var(--text) !important;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+  font-size: 1rem;
+}
+.card-company {
+  margin-top: 5px;
+  color: var(--subText);
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonal {
+    background-color: var(--primaryClr10);
+  }
+  .container-para span {
+    display: none;
+  }
+  .testimonal .heading {
+    font-size: 24px;
+    color: var(--text);
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-align: left;
+    line-height: 48px;
+    padding: 0 24px;
+  }
+  .testimonal p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--subText);
+    text-align: left;
+    margin: 1em 0;
+    padding: 0 24px;
+  }
+  .card-rating .t39Star {
+    width: 20px;
+  }
+  .card-profile img {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+  }
+}

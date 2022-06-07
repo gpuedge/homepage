@@ -1,0 +1,223 @@
+.showcase-row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.showcase-top {
+  display: flex;
+  align-items: center;
+}
+.showcase-top_left {
+  width: 600px;
+}
+.showcase-top_left .MainText {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  letter-spacing: 0.004em;
+  margin-bottom: 1rem;
+}
+.showcase-top_left .Para {
+  color: var(--subText);
+  letter-spacing: 0.3px;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 378px;
+  margin-top: 15px;
+  line-height: 28px !important;
+}
+.showcase-top_left .BotWrapper {
+  margin-top: 60px;
+  flex-direction: column;
+  align-items: baseline;
+}
+.showcase-top_left .BotWrapper img {
+  margin-right: 35px;
+}
+.botwrapper-head {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+  font-size: 1.25rem;
+}
+.botwrapper-para {
+  max-width: 262px;
+  margin-top: 10px;
+  color: var(--subText);
+  letter-spacing: 0.01em;
+  line-height: 160%;
+  font-size: 1rem;
+}
+.showcase-top_right {
+  display: flex;
+  align-items: center;
+}
+.top-right_one {
+  margin-left: 30px;
+  margin-top: 250px;
+}
+.top-right_two img {
+  width: 255px;
+  height: 356px;
+  aspect-ratio: auto 255 / 356;
+  cursor: pointer;
+}
+.top-right_one img {
+  width: 255px;
+  height: 356px;
+  aspect-ratio: auto 255 / 356;
+  /* margin-left: 30px; */
+  cursor: pointer;
+}
+.showcase_server {
+  background-color: #5367ff;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.showcase_server div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.showcase-banner {
+  margin-top: 110px;
+  height: 368px;
+  border-radius: 16px;
+  background: var(--primaryClr);
+  box-shadow: 0 12px 10px -1px var(--boxShadow);
+  display: flex;
+}
+.banner-left {
+  display: flex;
+  margin-left: 80px;
+  max-width: 534px;
+  height: 368px;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.banner-left .heading {
+  font-size: 36px;
+  color: var(--constantWhite) !important;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.banner-left .para {
+  letter-spacing: 0.3px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--constantWhite) !important;
+  font-weight: 400;
+}
+.banner-left button {
+  margin-top: 40px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid var(--primaryClr);
+  color: var(--primaryClr);
+  background: var(--primaryBg);
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+.banner-right {
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+.banner-right img {
+  width: 261px;
+  height: 327px;
+}
+
+@media screen and (max-width: 1200px) {
+  .showcase-top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 25px;
+  }
+  .showcase-top_left .BotWrapper {
+    display: none;
+  }
+  .showcase-top_left {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .showcase-top_right {
+    flex-direction: column;
+  }
+
+  .top-right_two img {
+    width: auto;
+    /* height: 100%; */
+  }
+  .top-right_one {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .top-right_one img {
+    margin-left: 0px;
+  }
+  .showcase-top_left .MainText {
+    font-size: 24px;
+    color: var(--text);
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+  .showcase-top_left .Para {
+    text-align: left;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--subText);
+    padding: 0;
+  }
+  .showcase-banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .banner-right {
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .banner-left {
+    height: auto;
+    padding: 25px 30px 25px 25px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .banner-left button {
+    display: none;
+  }
+  .banner-left .heading {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--constantWhite) !important;
+    text-align: left;
+    line-height: 32px !important;
+    margin-bottom: 10px;
+  }
+  .banner-left .para {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+.product_section {
+  margin-bottom: 100px;
+}
+
+.product_chip {
+  background: var(--subText70);
+  color: var(--text);
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product_heading {
+  font-size: 36px;
+  color: var(--text);
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+.product_section .valign-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.MainText {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 80px;
+  line-height: 94px;
+  margin-top: -35px;
+  color: var(--text);
+}
+.MainPara {
+  font-size: 28px;
+  font-weight: 500;
+  margin-left: 15px;
+  color: var(--text);
+}
+.Para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+.product-btn {
+  width: 200px;
+  height: 55px;
+  font-size: 16px;
+  background: var(--primaryClr);
+  color: var(--primaryBg);
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background: var(--primaryClr) !important;
+}
+.view-product {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.view-product span {
+  text-align: center;
+  color: var(--primaryClr);
+  line-height: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+.view-product svg {
+  color: var(--primaryClr);
+}
+.tab-container .tab-right {
+  margin-left: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-container .valign-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-container .valign-wrapper img {
+    margin-bottom: 20px;
+  }
+  .tab-container .tab-right {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .product_section .product_chip {
+    display: block;
+    margin: auto;
+  }
+  .product_section .product_heading {
+    color: var(--text);
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .product_section .MainText {
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+    line-height: 94px;
+  }
+  .product_section .MainPara {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .product_section .Para {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--subText);
+    margin: 0 15px;
+    min-height: 80px;
+  }
+  .view-product {
+    margin-top: -50px;
+  }
+  .product-btn {
+    height: 45px;
+  }
+}
