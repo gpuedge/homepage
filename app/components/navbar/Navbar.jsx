@@ -94,7 +94,7 @@ const Navbar = () => {
           </div>
           <div>
             <div className="navbar-btn">
-              <a href="https://node0.gpux.ai/" target="_blank">
+              <a href="https://node1.gpux.ai/" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -174,7 +174,7 @@ const Navbar = () => {
                   <a href="https://wallet.gpux.ai/" target="_blank">
                     <p>👛 Wallet</p>
                   </a>
-                  <a href="https://node0.gpux.ai/" target="_blank">
+                  <a href="https://node1.gpux.ai/" target="_blank">
                     <p>Visit Node 0</p>
                   </a>
                   <p>Placeholder 2</p>
