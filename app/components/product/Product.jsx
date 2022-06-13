@@ -4,7 +4,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import RL_AI from "~/assets/rl_ai.gif";
+//import RL_AI from "~/assets/rl_ai.gif";
+import RL_AI_MP4 from "~/assets/rl.mp4";
 import RENDER_FARM from "~/assets/render_farm.png";
 import TRANSCODE from "~/assets/transcode.jpeg";
 import LIVE from "~/assets/live.jpg";
@@ -78,7 +79,8 @@ const Product = () => {
           <TabPanel value={value} index={0}>
             <div className="valign-wrapper">
               <div>
-                <img className="ProductImg " src={RL_AI} alt="stocks" />
+                {/*<img className="ProductImg " src={RL_AI} alt="stocks" />*/}
+                <video className="ProductImg " autoPlay loop muted playsInline src={RL_AI_MP4} type="video/mp4" />
               </div>
               <div className="tab-right">
                 <div>

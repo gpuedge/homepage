@@ -12,8 +12,10 @@ const Header = () => {
         <p>
           The power of a <b>supercomputer</b> in your hands.
         </p>
-        <button onClick={() => document.getElementById("WORK_TYPES").scrollIntoView()}>
-          Run your Job
+        <button>
+          <a href="https://docs.gpux.ai/" style={{textDecoration: "inherit", color: "inherit"}} target="_blank">
+            Read the Docs 📜
+          </a>
         </button>
       </div>
       <motion.div
