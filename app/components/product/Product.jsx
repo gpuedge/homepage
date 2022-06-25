@@ -80,7 +80,15 @@ const Product = () => {
             <div className="valign-wrapper">
               <div>
                 {/*<img className="ProductImg " src={RL_AI} alt="stocks" />*/}
-                <video className="ProductImg " autoPlay loop muted playsInline src={RL_AI_MP4} type="video/mp4" />
+                <video
+                  className="ProductImg "
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={RL_AI_MP4}
+                  type="video/mp4"
+                />
               </div>
               <div className="tab-right">
                 <div>
@@ -116,7 +124,7 @@ const Product = () => {
                     Cluster render your Blender, Maya and other work loads.
                     Parallelize up to 1000 GPUs. Your own on-demand render farm.
                   </div>
-                  <Link to="/rendering" className="Link-tag">
+                  <Link to="/blog/render" className="Link-tag">
                     <button className="product-btn">Explore Rendering</button>
                   </Link>
                 </div>
@@ -139,7 +147,7 @@ const Product = () => {
                   <div className="Para">
                     Transcode your content into HLS and other formats.
                   </div>
-                  <Link to="/video-transcoding" className="Link-tag">
+                  <Link to="/blog/transcode" className="Link-tag">
                     <button className="product-btn">Explore Transcode</button>
                   </Link>
                 </div>
@@ -163,7 +171,7 @@ const Product = () => {
                     Offload your live streams to our edge and transcode + serve
                     media directly.
                   </div>
-                  <Link to="/machine-learning" className="Link-tag">
+                  <Link to="/blog/live" className="Link-tag">
                     <button className="product-btn">
                       Explore Live Streaming
                     </button>

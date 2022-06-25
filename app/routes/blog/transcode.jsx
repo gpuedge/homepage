@@ -1,4 +1,4 @@
-import Ai from "~/pages/ai/Ai";
+import Transcode from "~/pages/transcode/Transcode";
 
 import stylesAI from "~/pages/ai/ai.css";
 export const links = () => {
@@ -6,7 +6,7 @@ export const links = () => {
 };
 
 export default function Index() {
-  return <Ai />;
+  return <Transcode />;
 }
 
 export function ErrorBoundary({ error }) {
