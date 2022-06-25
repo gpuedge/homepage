@@ -1,4 +1,4 @@
-import Render from "~/pages/render/render";
+import Render from "~/pages/render/Render";
 
 import stylesAI from "~/pages/ai/ai.css";
 export const links = () => {
