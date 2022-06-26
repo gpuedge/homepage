@@ -2,9 +2,9 @@ import { Link } from "@remix-run/react";
 import LIVE_IMG from "~/assets/livee.jpg";
 
 export const meta = () => ({
-  title: 'Live Streaming - RTMP',
+  title: 'Homomorphic Encryption GPU',
   description: `
-    Go live using OBS with RTMP on the GPUX Edge. Your goto live streaming network.
+    Run your Homomorphic Encryption workload on our dedicated GPU Farm.
   `,
 });
 
@@ -13,32 +13,36 @@ const Live = () => {
     <div className="blog-container web-align">
       <div className="blog-container-left">
         <div className="blog-container-wrapper">
-          <h1 className="blog-title">Live Streaming with OBS+RTMP</h1>
+          <h1 className="blog-title">Homomorphic Encryption for secure training</h1>
           <span className="blog-small-text">🎥 Live</span>
           <img src={LIVE_IMG} alt="" />
           <hr />
           <h1>Introduction</h1>
           <p className="blog-desc">
-            Live Stream to the GPUX Edge and deliver the same media to your viewers.
+            Often we need to keep our training data and trained models private for compliance and as well as
+            to preserve our companies secrets.
+            <br/>
+            <br/>
+            For example in the field of healthcare we dont want our Cloud GPU providers to have our patients health care
+            data stored cleartext in the server ram. A crafty system administrator 
+            could always copy the data for themselves or leak it publically.
           </p>
-          <h1>Live Stream</h1>
+          <h1>Train on Encrypted Data</h1>
           <p className="blog-desc">
-            Let GPUX Ingest your Live Stream RTMP with full OBS support. Then deliver it using the GPUX VDN to your viewers 
-            with full HLS support or mp4 frames over websockets.
-          </p>
-          <h1>Video delivery network (VDN)</h1>
-          <p className="blog-desc">
-            The GPUX video delivery network provides live video media delivery for HLS players like hls.js or VLC.
-            The VDN has free Egress!
-          </p>
-          <h1>4k and 4k 360 Live streaming</h1>
-          <p className="blog-desc">
-            Streaming resolutions over 4k like 360 video 60 fps, 3840x3840, is fully supported.
+            With Homomorphic Encryption we not only keep the training data encrypted at rest, we also train our
+            model on fully encrypted data, creating a fully encrypted training circuit. No sensitive data can leak out
+            to the node provider whos hardware we are using.
+            <br/>
+            <br/>
+            Read more about NVIDIA Federated Learning here plus check the GitHub example at the bottom of the article: 
+            <a target="_blank" href="https://developer.nvidia.com/blog/federated-learning-with-homomorphic-encryption/">
+                https://developer.nvidia.com/blog/federated-learning-with-homomorphic-encryption/
+            </a>
           </p>
           <h1>Conclusion</h1>
           <p className="blog-desc">
-            Use GPUX to ingest your RTMP stream then allow your viewers to view it from the GPUX Video Delivery Network.
-            Make your business model work with free EGRESS.
+            Take advantage of the low cost of GPUS on GPUX to train your neural network while meeting your
+            compliance guidelines.
             <br></br>
             <br></br>
             Get started on <a href="https://gpux.ai/">GPUX</a> today!
