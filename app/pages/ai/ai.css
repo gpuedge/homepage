@@ -1,0 +1,125 @@
+.blog-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  color: var(--subText);
+}
+
+.blog-container-left {
+  flex: 2;
+}
+.blog-container-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-container-right .blog-container_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blog-container_card {
+  position: relative;
+  /* max-width: 350px; */
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 0 var(--boxShadow);
+  background-color: var(--primaryBg);
+  float: right;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+}
+.container-card-heading {
+  font-size: 19px;
+  letter-spacing: -0.23px;
+  color: var(--text);
+  -webkit-font-smoothing: auto;
+  margin: 15px 0 20px;
+}
+.container-card-para {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.16px;
+  color: var(--subText);
+  margin-bottom: 20px;
+}
+
+.blog-container_card button {
+  width: 100%;
+  font-size: 16px;
+  background: var(--primaryClr);
+  color: var(--primaryBg);
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border: none;
+}
+.blog-container_related {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.container-related-heading {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 15px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.container-related-work {
+  padding: 8px 15px;
+  display: block;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.container-related-work:hover {
+  background-color: var(--primaryClr10);
+}
+.blog-container img {
+  margin-top: 20px;
+}
+.blog-title {
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: var(--text) !important;
+  margin-bottom: 20px;
+}
+.blog-small-text {
+  font-size: 0.875rem;
+  background-color: rgb(237, 237, 237);
+  padding: 4px;
+  border-radius: 4px;
+}
+hr {
+  margin: 20px 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.blog-desc {
+  text-align: justify;
+  line-height: 28px;
+  margin-bottom: 26px;
+  color: var(--text) !important;
+}
+.linkk {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 900px) {
+  .blog-container {
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+}

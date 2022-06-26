@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import windows_logo from "~/assets/windows_logo.png";
 import linux from "~/assets/linux.png";
 import github from "~/assets/github.png";
@@ -74,6 +75,9 @@ const Footer = () => {
                 <p>Render</p>
                 <p>Transcode</p>
                 <p>Live Stream</p>
+                <Link to="/blog/homomorphic_encryption" className="Link-tag">
+                    <p>Homomorphic Encryption</p>
+                </Link>
               </div>
               <div className="footer-col-3">
                 <div className="col-head">GPUx</div>

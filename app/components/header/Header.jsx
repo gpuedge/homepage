@@ -13,7 +13,12 @@ const Header = () => {
           The power of a <b>supercomputer</b> in your hands.
         </p>
         <button>
-          <a href="https://docs.gpux.ai/" style={{textDecoration: "inherit", color: "inherit"}} target="_blank">
+          <a
+            href="https://docs.gpux.ai/"
+            style={{ textDecoration: "inherit", color: "inherit" }}
+            target="_blank"
+            rel="noreferrer"
+          >
             Read the Docs 📜
           </a>
         </button>

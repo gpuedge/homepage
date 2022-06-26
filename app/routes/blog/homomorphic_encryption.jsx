@@ -1,4 +1,4 @@
-import Ai from "~/pages/ai/Ai";
+import HomoEnc from "~/pages/homomorphic_enc/HomoEnc";
 
 import stylesAI from "~/pages/ai/ai.css";
 export const links = () => {
@@ -6,7 +6,7 @@ export const links = () => {
 };
 
 export default function Index() {
-  return <Ai />;
+  return <HomoEnc />;
 }
 
 export function ErrorBoundary({ error }) {
