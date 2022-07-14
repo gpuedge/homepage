@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import github from "~/assets/github.png";
 import LOGO1 from "~/assets/logo1.png";
 import LOGO2 from "~/assets/logo2.png";
@@ -6,13 +6,39 @@ import Data from "./Data";
 import NavbarBtn from "./NavbarBtn";
 import { Link } from "@remix-run/react";
 
+async function setter_nodes(setNodes) {
+    const req = await fetch("https://wallet.gpux.ai/api/node/list");
+    var { nodes } = await req.json();
+    nodes = nodes.map(n=> {
+      try {
+        n.url = n.addresses[0];
+        n.title = new URL(n.url).host;
+        n.desc = `(Bench: ? | CPU: ${n.resources.cpu_avail} | RAM: ${n.resources.ram_avail}G | GPU: ${n.resources.gpu_total.length})`
+        return n;
+      } catch (err) {
+        return null;
+      }
+    }).filter(n=> n)
+    var arm0 = {
+      url: "https://arm0.gpux.ai/",
+      title: "arm0.gpux.ai",
+      desc: "On-Request (Bench: ? | AARCH64 | CPU: 32 | RAM: 32G)",
+    }
+    nodes.push(arm0)
+    setNodes(nodes)
+}
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSuggest, setShowSuggest] = useState(false);
 
-  const [item, setItem] = useState(Data);
+  const [nodes, setNodes] = useState([]);
   const [text, setText] = useState("");
-  const menuItems = [...new Set(Data.map((Val) => Val.category))];
+  const menuItems = ["All", "Online"];
+
+  useEffect(() => {
+    setter_nodes(setNodes)
+  }, []);
 
   const filterItem = (curcat) => {
     const newItem = Data.filter((newVal) => {
@@ -58,7 +84,7 @@ const Navbar = () => {
               className="navbar-search"
               placeholder="Find your node"
               onMouseEnter={() => setShowSuggest(true)}
-              onChange={(e) => onChangeHandler(e.target.value)}
+              readOnly={true}
               value={text}
             />
             {showSuggest && (
@@ -66,26 +92,24 @@ const Navbar = () => {
                 className="suggest-container"
                 onMouseLeave={() => setShowSuggest(false)}
               >
-                <div className="suggest-top">
+                {/*<div className="suggest-top">
                   <NavbarBtn
                     filterItem={filterItem}
                     setItem={setItem}
                     menuItems={menuItems}
                   />
-                </div>
+                </div>*/}
                 <div className="suggest-bottom">
                   <div className="suggest-bottom_list">
-                    {item.map((val) => (
-                      <>
-                        <div>
-                          <p>
-                            <a href={`${val.url}`} target="_blank">
-                              {val.title}
-                            </a>
-                          </p>
-                          <p>{val.price}</p>
-                        </div>
-                      </>
+                    {nodes.map((node) => (
+                      <div>
+                        <p>
+                          <a href={`${node.url}`} target="_blank">
+                            {node.title}
+                          </a>
+                        </p>
+                        <p>{node.desc}</p>
+                      </div>
                     ))}
                   </div>
                 </div>
