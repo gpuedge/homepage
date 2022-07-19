@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
           <div>
             <div className="navbar-btn">
-              <a href="https://node1.gpux.ai/" target="_blank">
+              <a href="https://node0.gpux.ai/" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -195,23 +195,26 @@ const Navbar = () => {
               </div>
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
-                  <a href="https://wallet.gpux.ai/" target="_blank">
+                  <a href="https://wallet.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>👛 Wallet</p>
                   </a>
-                  <a href="https://node1.gpux.ai/" target="_blank">
+                  <a href="https://wallet.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
+                    <p>Sign Up</p>
+                  </a>
+                  <a href="https://node0.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>Visit Node 0</p>
                   </a>
-                  <p>Placeholder 2</p>
                 </div>
-                <div className="mobile-divider"></div>
+                {/*<div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
                   <p>Placeholder 11</p>
                   <p>Placeholder 12</p>
-                </div>
+                </div>*/}
                 <div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
-                  <p>Placeholder 21</p>
-                  <p>Help and Support</p>
+                  <a href="https://discord.com/invite/jjBSjSF" target="_blank" style={{textDecoration: "none"}}>
+                    <p>Help and Support</p>
+                  </a>
                 </div>
                 <div className="mobile-divider"></div>
               </div>

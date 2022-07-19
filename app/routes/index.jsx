@@ -51,8 +51,8 @@ export default function Index() {
       <Product />
       <Showcase />
       <Article />
-      <Press />
-      <Test />
+      {/*<Press />
+      <Test />*/}
       <Footer />
     </>
   );
