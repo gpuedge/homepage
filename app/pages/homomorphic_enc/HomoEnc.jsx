@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import LIVE_IMG from "~/assets/livee.jpg";
+import BlogRightMenu from "~/components/blog/BlogRightMenu";
 
 export const meta = () => ({
   title: 'Homomorphic Encryption GPU',
@@ -14,7 +15,7 @@ const Live = () => {
       <div className="blog-container-left">
         <div className="blog-container-wrapper">
           <h1 className="blog-title">Homomorphic Encryption for secure training</h1>
-          <span className="blog-small-text">🎥 Live</span>
+          <span className="blog-small-text">🔒 Secure</span>
           <img src={LIVE_IMG} alt="" />
           <hr />
           <h1>Introduction</h1>
@@ -49,31 +50,7 @@ const Live = () => {
           </p>
         </div>
       </div>
-      <div className="blog-container-right">
-        <div className="blog-container_card">
-          <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/loggedOutStateImage.f28263ce.svg"
-            alt=""
-          />
-          <p className="container-card-heading">Want to Earn?</p>
-          <p className="container-card-para">
-            Run a Node
-          </p>
-          <button><a target="_blank" href="https://docs.gpux.ai/farm/farming/" style={{color: "inherit", textDecoration: "inherit"}}>GET STARTED</a></button>
-        </div>
-        <div className="blog-container_related">
-          <p className="container-related-heading">Check out other Jobs</p>
-          <Link className="linkk" to="../../blog/ai">
-            <p className="container-related-work">Train AI</p>
-          </Link>{" "}
-          <Link className="linkk" to="../../blog/render">
-            <p className="container-related-work">Blender Render</p>
-          </Link>{" "}
-          <Link className="linkk" to="../../blog/transcode">
-            <p className="container-related-work">Transcode Video</p>
-          </Link>
-        </div>
-      </div>
+      <BlogRightMenu />
     </div>
   );
 };

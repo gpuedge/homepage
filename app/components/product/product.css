@@ -1,5 +1,5 @@
 .product_section {
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 
 .product_chip {
@@ -26,7 +26,7 @@
   line-height: 25px;
   letter-spacing: 0.2px;
   font-weight: 600;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   margin-top: 30px;
 }
 .product_section .valign-wrapper {

@@ -18,9 +18,9 @@ const Footer = () => {
                 alt=""
                 className="footer-logo"
               />
-              <p className="address">4th Rock</p>
-              <p className="address">S.T Bed, From the Sun</p>
-              <p className="address">The Interwebs – 311</p>
+              <p className="address">GPUX Inc.</p>
+              <p className="address">88 Queens Quay W, Suite 2500</p>
+              <p className="address">Toronto, Canada</p>
               <p className="underline">Contact Us</p>
               <div className="social">
                 {/*<a href="/" target="_blank">
@@ -62,47 +62,66 @@ const Footer = () => {
                 <a href="https://discord.gg/jjBSjSF" target="_blank">
                   <img src={discord} alt="" className="discord_icon" />
                 </a>
-                <a href="https://github.com/gpuedge/homepage" target="_blank">
+                <a href="https://github.com/gpuedge" target="_blank">
                   <img src={github_footer} alt="" className="discord_icon" />
                 </a>
               </div>
             </div>
             <div className="footer-list-right">
               <div className="footer-col-3">
-                <div className="col-head">WORKLOADS</div>
-                <p>Container</p>
-                <p>AI</p>
-                <p>Render</p>
-                <p>Transcode</p>
-                <p>Live Stream</p>
-                <Link to="/blog/homomorphic_encryption" className="Link-tag">
-                    <p>Homomorphic Encryption</p>
+                <div className="col-head">BLOG</div>
+                <Link className="Link-tag" to="/blog/ai">
+                  <p className="container-related-work">AI</p>
+                </Link>
+                <Link className="Link-tag" to="/blog/render">
+                  <p className="container-related-work">Blender</p>
+                </Link>
+                <Link className="Link-tag" to="/blog/transcode">
+                  <p className="container-related-work">Transcode</p>
+                </Link>
+                <Link className="Link-tag" to="/blog/live">
+                  <p className="container-related-work">Live Streaming</p>
+                </Link>
+                <Link className="Link-tag" to="/blog/homomorphic_encryption">
+                  <p className="container-related-work">Homomorphic Encryption</p>
                 </Link>
               </div>
               <div className="footer-col-3">
-                <div className="col-head">GPUx</div>
-                <p>About Us</p>
-                <p>Current Round</p>
-                <p>Blog</p>
-                <p>Media & Press</p>
-                <p>Help and Support</p>
+                <div className="col-head">GPUX</div>
+                <Link className="Link-tag" to="/how-to">
+                  <p className="container-related-work">How To</p>
+                </Link>
+                <Link className="Link-tag" to="/blog/ai">
+                  <p className="container-related-work">Blog</p>
+                </Link>
+                <Link className="Link-tag" to="/company">
+                  <p className="container-related-work">Company</p>
+                </Link>
               </div>
               <div className="footer-col-3">
-                <div className="col-head">QUICK LINKS</div>
-                <p>App</p>
+                <div className="col-head">LINKS</div>
+                <p><a href="https://docs.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Documentation</a></p>
+                <p><a href="https://docs.gpux.ai/farm/welcome" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Become a Host</a></p>
+                <p>Build your App</p>
+                <p><a href="https://explorer.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Explorer</a></p>
+                <p>GPUX University</p>
                 <p>Video Inspector</p>
-                <p>Become a Farmer</p>
-                <p>Documentation</p>
-                <p>GPUx Academy</p>
-                <p>Sitemap</p>
               </div>
+              <div className="footer-col-3">
+                <div className="col-head">LEGAL</div>
+                <p>Disclaimer</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+              </div> 
             </div>
           </div>
         </div>
+
         <div className="footer-line"></div>
         <div className="footer-bottom">
           <div className="footer-company">
-            ⓒ&nbsp; 2022 GPUx. All rights reserved, Built with{" "}
+            ⓒ&nbsp; 2021-2022 GPUx. All rights reserved, Built with{" "}
             <span className="heart">♥</span>
           </div>
           <div className="footer-store">

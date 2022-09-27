@@ -11,6 +11,13 @@ import TRANSCODE from "~/assets/transcode.jpeg";
 import LIVE from "~/assets/live.jpg";
 import { Link } from "@remix-run/react";
 
+import { motion } from "framer-motion";
+import openai from "~/assets/openai.png";
+import podman from "~/assets/podman.png";
+import SDLOGO from "~/assets/sd_logo.jpg";
+import BLENDERLOGO from "~/assets/blender_icon_256x256.png";
+import JUPYTERLOGO from "~/assets/jupyter2.png";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -45,6 +52,107 @@ function a11yProps(index) {
 }
 
 const Product = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  return (
+    <>
+    <div className="product_section web-align">
+      <h2 className="product_heading">Price per Hour</h2>
+      <div className="tab-container">
+      <table>
+        <tr>
+          <th>Card Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>RTX3060</td>
+          <td>$0.10</td>
+        </tr>
+        <tr>
+          <td>RTX3090</td>
+          <td>$0.30</td>
+        </tr>
+        <tr>
+          <td>A4000</td>
+          <td>$0.18</td>
+        </tr>
+        <tr>
+          <td>A100</td>
+          <td>$1.60</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Resource Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>1 CPU</td>
+          <td>$0.0063</td>
+        </tr>
+        <tr>
+          <td>1GB Ram</td>
+          <td>$0.0014</td>
+        </tr>
+        <tr>
+          <td>GPUX Persistant S3 Storage (1GB)</td>
+          <td>$0.0000208 ($0.015 per month)</td>
+        </tr>
+        <tr>
+          <td>Storage Local</td>
+          <td>$0.00 (Free)</td>
+        </tr>
+        <tr>
+          <td>Bandwidth</td>
+          <td>$0.00 (Free)</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+    <div className="header web-align">
+      <div className="left-header">
+        <h1>
+          Use Pod Templates <span></span>
+        </h1>
+        <p>
+          Run a template or make your <b>own</b>.
+        </p>
+      </div>
+      <motion.div
+        className="right-header"
+        initial={{ y: "20px" }}
+        animate={{ y: "0px" }}
+        transition={{ duration: 1 }}
+      >
+        <div className="valign-wrapper">
+          <a>
+            <img src={SDLOGO} width="49" height="49" alt="MF - Groww" />
+            <p>Stable Diffusion</p>
+          </a>
+          <a>
+            <img src={BLENDERLOGO} width="49" height="49" alt="MF - Groww" />
+            <p>Blender</p>
+          </a>
+        </div>
+        <div className="valign-wrapper">
+          <a>
+            <img src={JUPYTERLOGO} width="49" height="49" alt="MF - Groww" />
+            <p>Jupyter Notebook</p>
+          </a>
+        </div>
+      </motion.div>
+    </div>
+
+    </>
+  );
+};
+
+const Product2 = () => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {

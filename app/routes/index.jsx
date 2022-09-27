@@ -35,11 +35,11 @@ export const links = () => {
 };
 
 export const meta = () => ({
-  title: 'GPUx - Distributed GPU',
+  title: 'GPUx - Cloud GPU',
   description: `
-    GPUX is a distributed supercomputer for anyone to access. 
+    GPUX save on your GPU costs by 66-95% compared to the cloud. GPUX is a Dedicated GPU Cloud provider with community GPUs. 
     It can run dedicated server gpus, act as a render farm for rendering, act as a protein folding network,
-    transcode video, or live stream video.
+    transcode video, live stream video, do stable diffusion, do machine learning, do inference, run docker containers. 
   `,
 });
 

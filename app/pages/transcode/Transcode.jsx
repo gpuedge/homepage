@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import TRANSCODE from "~/assets/transcoding.jpg";
+import BlogRightMenu from "~/components/blog/BlogRightMenu";
 
 export const meta = () => ({
   title: 'Video Transcode to HLS with Video Delivery',
@@ -57,31 +58,7 @@ const Transcode = () => {
           </p>
         </div>
       </div>
-      <div className="blog-container-right">
-        <div className="blog-container_card">
-          <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/loggedOutStateImage.f28263ce.svg"
-            alt=""
-          />
-          <p className="container-card-heading">Want to Earn?</p>
-          <p className="container-card-para">
-            Run a Node
-          </p>
-          <button><a target="_blank" href="https://docs.gpux.ai/farm/farming/" style={{color: "inherit", textDecoration: "inherit"}}>GET STARTED</a></button>
-        </div>
-        <div className="blog-container_related">
-          <p className="container-related-heading">Check out other Jobs</p>
-          <Link className="linkk" to="../../blog/ai">
-            <p className="container-related-work">Train AI</p>
-          </Link>{" "}
-          <Link className="linkk" to="../../blog/render">
-            <p className="container-related-work">Blender Render</p>
-          </Link>{" "}
-          <Link className="linkk" to="../../blog/live">
-            <p className="container-related-work">Live Streaming</p>
-          </Link>
-        </div>
-      </div>
+      <BlogRightMenu />
     </div>
   );
 };
