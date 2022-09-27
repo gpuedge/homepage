@@ -13,7 +13,7 @@ const Header = () => {
         <p>
           Run any Docker <b>container</b>.
           <br/>
-          (Free $1 for all new accounts)
+          (Limited Time: Free $10 for all new accounts)
         </p>
         <div>
           <button>
