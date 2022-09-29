@@ -60,9 +60,8 @@ function ThePage() {
           <p className="blog-desc">
             Payments are settled on the network using cryptographically signed transactions.
             <br/> Deposits to the wallet are done using Stripe. 
-            <br />By registering today you will receive $1 for free. 
             <br/><br/>Go to <a href="https://wallet.gpux.ai/" target="_blank">https://wallet.gpux.ai/</a>
-            <br/>Using email authentication for ease of use.
+            <br/>Use email authentication for ease of use.
             <img src={WALLETEMAIL} alt="" />
             <br/>
             <br/>Use Private Key authentication and save your key for advanced usage.
