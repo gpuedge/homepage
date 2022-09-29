@@ -12,6 +12,8 @@ import WALLETEMAIL from "~/assets/wallet_email.png";
 import WALLETPKEY from "~/assets/wallet_pkey.png";
 import WALLETPKEY2 from "~/assets/wallet_pkey2.png";
 import WALLETCREDITS from "~/assets/wallet_credits.png";
+import EXPLORER_POD_1 from "~/assets/explorer_pod_1.png";
+import EXPLORER_POD_JUPYTER from "~/assets/explorer_pod_jupyter.png";
 
 export const links = () => {
   return [
@@ -76,13 +78,25 @@ function ThePage() {
             <img src={WALLETCREDITS} alt="" />
           </p>
 
-          <h1>3. Run Hello NVIDIA</h1>
+          <h1>3. Run NVIDIA-SMI</h1>
           <p className="blog-desc">
             Hosts (or nodes) are individual entities on the network which are herded together using an explorer.
-            <br/><br/>Go to <a href="https://explorer.gpux.ai/" target="_blank">https://explorer.gpux.ai/</a>
+            <br/><br/>Go to <a href="https://explorer.gpux.ai/" target="_blank">https://explorer.gpux.ai/</a> and click Pod.
+            <br/>The default values are set to print nvidia-smi output.
+            <br/>Click [Run!]
+            <br/>Click the [📜 Log] button to see the output
             <br/>
+            <img src={EXPLORER_POD_1} alt="" />
           </p>
 
+          <h1>3. Run Jupyter Notebook</h1>
+          <p className="blog-desc">
+            Port Forwarding is done using subdomain addressing. 
+            <br/>Select template [Jupyter Notebook].
+            <br/>Click the [🔌 8080] button to forward to the notebook
+            <br/>
+            <img src={EXPLORER_POD_JUPYTER} alt="" />
+          </p>
         </div>
       </div>
     </div>
