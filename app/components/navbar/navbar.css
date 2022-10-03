@@ -107,8 +107,9 @@
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 10px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
 }
-.navbar-btn a {
+.navbar-btn div {
   display: flex;
   align-items: center;
   gap: 10px;

@@ -2,6 +2,16 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.article_section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background: var(--quaternaryBg);
+  height: 611px;
+  margin-top: -25px;
+}
 .article_section .heading {
   font-size: 36px;
   color: var(--text);
@@ -9,6 +19,7 @@
   letter-spacing: 0.2px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: -30px;
 }
 .card-container {
   display: flex;
@@ -19,7 +30,7 @@
   height: 411px;
   overflow: hidden;
   margin-top: 80px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: filter 0.1s ease-in;
   display: flex;
   flex-direction: column;
@@ -71,15 +82,29 @@
     text-align: left;
   }
 }
+@media screen and (max-width: 1000px) {
+  .article_section:before {
+    height: 975px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .article_section:before {
+    height: 1410px;
+  }
+}
 @media screen and (max-width: 600px) {
   .card-container {
     flex-direction: column;
     padding: 0 1.6rem;
     margin-top: 0px !important;
   }
+  .team-card {
+    margin-top: 40px !important;
+  }
   .card-wrapper img {
     height: 230px;
     margin: auto;
+    object-fit: cover;
   }
   .article_section .heading {
     text-align: center;

@@ -6,6 +6,32 @@
   height: calc(100vh - 282px);
   /*margin-top: 30px;*/
 }
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--primaryClr10);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(2);
+  height: 790px;
+}
+.pod-template {
+  background-color: var(--primaryClr10);
+  background-image: url(//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfcBgDesignTop.7e1d62bd.svg),
+    url(//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfcBgDesignBottom.0bd49c55.svg);
+  background-position: 0 0, 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.pod-template .header {
+  max-height: 700px;
+  min-height: 600px;
+  height: unset;
+}
 .left-header {
   flex: 1;
   display: flex;
@@ -39,6 +65,11 @@
   font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
+}
+.left-header-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .right-header {
   display: flex;
@@ -131,11 +162,20 @@
 @media screen and (max-width: 1200px) {
   .header {
     flex-direction: column;
+    gap: 20px;
     max-height: initial;
     margin-bottom: 150px;
+    margin-top: 20px;
+  }
+  .left-header {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 900px) {
+  .header:before {
+    transform: scaleX(3);
+    height: 850px;
+  }
   .header {
     margin-top: 100px;
   }

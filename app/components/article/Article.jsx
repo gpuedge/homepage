@@ -6,41 +6,41 @@ const Article = () => {
   return (
     <div className="article_section web-align">
       <div className="heading">Meet our Team</div>
-      <div className="card-container">
+      <div className="card-container team-card">
         <div className="card-wrapper">
-          <img
-            style={{borderRadius: "10%"}}
-            width={260}
-            src={ANNIE}
-            alt=""
-          />
-          <p>Annie - Marketing 
-            <br/> Meet her in Krakow
-            <br/><a href="https://www.linkedin.com/in/anna-polishchuk-b671401b7" target="_blank">LinkedIn</a>
+          <img style={{ borderRadius: "10%" }} width={260} src={ANNIE} alt="" />
+          <p>
+            Annie - Marketing
+            <br /> Meet her in Krakow
+            <br />
+            <a
+              href="https://www.linkedin.com/in/anna-polishchuk-b671401b7"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </p>
         </div>
         <div className="card-wrapper">
-          <img
-            style={{borderRadius: "10%"}}
-            width={260}
-            src={IVAN}
-            alt=""
-          />
-          <p>Ivan - Tech
-            <br/> Meet him in Toronto
-            <br/><a href="https://www.linkedin.com/in/ivan-svirid/" target="_blank">LinkedIn</a>
+          <img style={{ borderRadius: "10%" }} width={260} src={IVAN} alt="" />
+          <p>
+            Ivan - Tech
+            <br /> Meet him in Toronto
+            <br />
+            <a href="https://www.linkedin.com/in/ivan-svirid/" target="_blank">
+              LinkedIn
+            </a>
           </p>
         </div>
         <div className="card-wrapper">
-          <img
-            style={{borderRadius: "10%"}}
-            width={260}
-            src={HENRY}
-            alt=""
-          />
-          <p>Henry - Operations
-            <br/> Meet him in Hefei
-            <br/><a href="weixin://dl/chat?henryduolaimifa" target="_blank">WeChat</a>
+          <img style={{ borderRadius: "10%" }} width={260} src={HENRY} alt="" />
+          <p>
+            Henry - Operations
+            <br /> Meet him in Hefei
+            <br />
+            <a href="weixin://dl/chat?henryduolaimifa" target="_blank">
+              WeChat
+            </a>
           </p>
         </div>
       </div>

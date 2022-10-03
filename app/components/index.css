@@ -69,6 +69,9 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+html {
+  overflow-x: hidden !important;
+}
 
 /* Set core root defaults */
 html:focus-within {
@@ -84,6 +87,8 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
@@ -143,18 +148,23 @@ select {
 }
 
 table {
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 tr th {
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
+  background: #f3f6f9;
+}
+tr:hover {
+  background-color: #f0f1f1;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;  
+  padding: 8px;
 }
-

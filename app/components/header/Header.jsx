@@ -12,26 +12,28 @@ const Header = () => {
         </h1>
         <p>
           Run any Docker <b>container</b>.
-          <br/>
+          <br />
           (Limited Time: Free $10 for all new accounts)
         </p>
-        <div>
-          <button>
-            <a
-              href="https://explorer.gpux.ai/"
-              style={{ textDecoration: "inherit", color: "inherit" }}
-              target="_blank"
-              rel="noreferrer"
+        <div class="left-header-btns">
+          <a
+            href="https://explorer.gpux.ai/"
+            style={{ textDecoration: "inherit", color: "inherit" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Get Started 🏃</button>
+          </a>
+          <Link
+            to="/how-to"
+            style={{ textDecoration: "inherit", color: "inherit" }}
+          >
+            <button
+              style={{ color: "black", background: "white", border: "dotted" }}
             >
-              Get Started 🏃
-            </a>
-          </button>
-          <button style={{marginLeft: "3px", color: "black", background: "white", border: "dotted"}}>
-            <Link to="/how-to" style={{ textDecoration: "inherit", color: "inherit" }}>
               Learn More
-            </Link>
-          </button>
-
+            </button>
+          </Link>
         </div>
       </div>
       <motion.div
