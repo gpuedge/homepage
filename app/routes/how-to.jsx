@@ -10,6 +10,7 @@ import AI_IMG from "~/assets/aii.jpg";
 /* import WALLETEMAIL from "~/assets/wallet_email.png";
 import WALLETPKEY from "~/assets/wallet_pkey.png";
 import WALLETPKEY2 from "~/assets/wallet_pkey2.png";
+
 import WALLETCREDITS from "~/assets/wallet_credits.png"; */
 
 import WALLETPKEY1 from "~/assets/app_ss/wallet_pkey1.jpg";
@@ -68,6 +69,7 @@ function ThePage() {
           <h1 className="blog-title">How to get started on GPUX</h1>
           <span className="blog-small-text">⚡Trending</span>
           <hr />
+
           <h1>Create a Wallet</h1>
           <div>
             <p className="blog-tips">
@@ -75,7 +77,7 @@ function ThePage() {
               transactions.
               <br /> Deposits to the wallet are done using Stripe.
               <br />
-              By registering today you will receive $1 for free.{" "}
+              By registering today you will receive $10 for free.{" "}
             </p>
             <br />
             <p className="blog-desc">
@@ -188,6 +190,7 @@ function ThePage() {
               <li>Click the [📜 Log] button to see the output</li>
             </ol>
           </p>
+
           <div className="blog-ss blog-ss-wide">
             <img src={EXPLORERPOD} alt="" />
           </div>
@@ -205,6 +208,7 @@ function ThePage() {
           <div className="blog-ss blog-ss-wide">
             <img src={EXPLORERHUPYTER} alt="" />
           </div>
+
         </div>
       </div>
     </div>

@@ -222,37 +222,30 @@ const Navbar = () => {
                   />
                 </div>
                 <div className="mobile-login-div">
-                  <p>The GPU EDGE</p>
+                  <p>The GPUX EDGE</p>
                   <div className="navbar-btn">
-                    <a href="https://github.com/gpuedge">
-                      <img src={github} width="25px" alt="" />
-                      <p>Go to Github</p>
+                    <a href="https://explorer.gpux.ai" target="_blank">
+                      <p>Go to Dashboard</p>
                     </a>
                   </div>
                 </div>
               </div>
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
-                  <a
-                    href="https://wallet.gpux.ai/"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                  >
+
+                  <a href="https://docs.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
+                    <p>📜 Docs</p>
+                  </a>
+                  <a href="https://wallet.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>👛 Wallet</p>
                   </a>
+                  
                   <a
                     href="https://wallet.gpux.ai/"
                     target="_blank"
                     style={{ textDecoration: "none" }}
                   >
                     <p>Sign Up</p>
-                  </a>
-                  <a
-                    href="https://node0.gpux.ai/"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <p>Visit Node 0</p>
                   </a>
                 </div>
                 {/*<div className="mobile-divider"></div>
