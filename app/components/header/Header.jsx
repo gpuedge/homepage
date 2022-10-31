@@ -11,18 +11,18 @@ const Header = () => {
           Save 80% on GPUs <span></span>
         </h1>
         <p>
-          Run any Docker <b>container</b>.
+          Run anything <b>Dockerized</b>.
           <br />
-          (Limited Time: Free $10 for all new accounts)
+          (Limited Time: Free $3 for all new accounts)
         </p>
-        <div class="left-header-btns">
+        <div className="left-header-btns">
           <a
             href="https://explorer.gpux.ai/"
             style={{ textDecoration: "inherit", color: "inherit" }}
             target="_blank"
             rel="noreferrer"
           >
-            <button>Get Started 🏃</button>
+            <button>Run GPUs 🏃</button>
           </a>
           <Link
             to="/how-to"

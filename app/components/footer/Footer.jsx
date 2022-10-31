@@ -109,10 +109,10 @@ const Footer = () => {
               </div>
               <div className="footer-col-3">
                 <div className="col-head">LEGAL</div>
-                <p>Disclaimer</p>
-                <p>Terms of Service</p>
-                <p>Privacy Policy</p>
-                <p>Cookie Policy</p>
+                {/*<p>Disclaimer</p>*/}
+                <Link className="Link-tag" to="/terms-of-service"><p className="container-related-work">Terms of Service</p></Link>
+                <Link className="Link-tag" to="/privacy"><p className="container-related-work">Privacy Policy</p></Link>
+                {/*<p>Cookie Policy</p>*/}
               </div> 
             </div>
           </div>

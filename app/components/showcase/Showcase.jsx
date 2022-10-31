@@ -213,15 +213,15 @@ const Showcase2 = () => {
                   alt="img"
                 />
               </div> */}
-              <div class="monetize">
+              <div className="monetize">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 17 13"
                   height="32"
                   width="32"
-                  class="mgf12Icon"
+                  className="mgf12Icon"
                 >
-                  <g fill="none" fill-rule="evenodd">
+                  <g fill="none" fillRule={"evenodd"}>
                     <path d="M-2-4h20v20H-2z"></path>
                     <path
                       fill="#FFF"
@@ -238,7 +238,7 @@ const Showcase2 = () => {
                     ></path>
                     <path
                       fill="#FFF"
-                      fill-rule="nonzero"
+                      fillRule={"nonzero"}
                       d="M6.61 2.6c.051 0 .102.014.146.04.133.08.175.249.094.379l-1.625 2.6h1.533c.045 0 .088.01.128.03l.055.036a.271.271 0 01.032.388l-3.26 3.74a.163.163 0 01-.17.047.161.161 0 01-.104-.202l.897-2.781h-.585l-.03-.001-.03-.005a.275.275 0 01-.215-.327l.79-3.582a.469.469 0 01.46-.362z"
                     ></path>
                   </g>

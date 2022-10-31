@@ -15,11 +15,9 @@ export const links = () => {
 };
 
 export const meta = () => ({
-  title: 'GPUx - Blog',
+  title: 'GPUX - Blog',
   description: `
-    GPUX is a distributed supercomputer for anyone to access. 
-    It can run dedicated server gpus, act as a render farm for rendering, act as a protein folding network,
-    transcode video, or live stream video.
+    GPUX is a distributed supercomputer. 
   `,
 });
 
