@@ -46,7 +46,7 @@ function ThePage() {
       <div className="blog-container-left">
         <div className="blog-container-wrapper">
           <span class="blog-small-text">
-            <a href="https://rawcdn.githack.com/gpuedge/wallet/a6a590d3276152d1b66ec2bff4a256144210c7ee/src/html/css/bootstrap.min.css" style={{textDecoration: "none", color: "inherit"}}>
+            <a href="https://rawcdn.githack.com/gpuedge/homepage/fb23b431253e0a9bd63ec9993c020bfd9f7338e4/app/assets/GPUX_Terms_of_Service-10_30_2022.pdf" style={{textDecoration: "none", color: "inherit"}}>
               📁 Download Terms of Service</a>
           </span>
           <img src={LEGAL_TOS} alt="" />
