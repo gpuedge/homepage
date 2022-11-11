@@ -10,11 +10,10 @@ const Showcase = () => {
       <div className="showcase-row">
         <div className="showcase-top">
           <div className="showcase-top_left">
-            <div className="MainText">Tier-4 Datacenter</div>
-            <div className="MainText">OR Community</div>
+            <div className="MainText">Datacenter</div>
             <div className="Para">
-              Choose to run your workload in defense industry grade datacenters
-              or across community nodes.
+              Your workload runs in industry grade datacenters through us or
+              our partners with who we have legal paperwork in place.
             </div>
             <div className="BotWrapper">
               <div className="valign-wrapper">

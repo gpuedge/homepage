@@ -69,19 +69,19 @@ const Product = () => {
             </tr>
             <tr>
               <td>RTX3060</td>
-              <td>$0.10</td>
+              <td>$0.15</td>
             </tr>
             <tr>
               <td>RTX3090</td>
-              <td>$0.30</td>
+              <td>$0.45</td>
             </tr>
             <tr>
               <td>A4000</td>
-              <td>$0.18</td>
+              <td>$0.25</td>
             </tr>
             <tr>
               <td>A100</td>
-              <td>$1.60</td>
+              <td>$2.02</td>
             </tr>
           </table>
 
@@ -118,10 +118,57 @@ const Product = () => {
         <div className="header web-align">
           <div className="left-header">
             <h1>
-              Use Pod Templates <span></span>
+              Run Docker <span></span>
             </h1>
             <p>
-              Run a template or make your <b>own</b>.
+              Use public DockerHub or push templates to our <b>private</b> storage.
+            </p>
+          </div>
+          <motion.div
+            className="right-header"
+            initial={{ y: "20px" }}
+            animate={{ y: "0px" }}
+            transition={{ duration: 1 }}
+          >
+            <div className="valign-wrapper">
+              <a>
+                <img src={SDLOGO} width="49" height="49" alt="MF - Groww" />
+                <p>Stable Diffusion</p>
+              </a>
+              <a>
+                <img
+                  src={BLENDERLOGO}
+                  width="49"
+                  height="49"
+                  alt="MF - Groww"
+                />
+                <p>Blender</p>
+              </a>
+            </div>
+            <div className="valign-wrapper">
+              <a>
+                <img
+                  src={JUPYTERLOGO}
+                  width="49"
+                  height="49"
+                  alt="MF - Groww"
+                />
+                <p>Jupyter Notebook</p>
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+
+      <div className="pod-template">
+        <div className="header web-align">
+          <div className="left-header">
+            <h1>
+              Run Inference <span></span>
+            </h1>
+            <p>
+              Protect your model or earn per <b>public</b> request.
             </p>
           </div>
           <motion.div

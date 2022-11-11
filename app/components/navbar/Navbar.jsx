@@ -75,7 +75,7 @@ const Navbar = () => {
                 className="navbar-btn"
                 style={{ color: "black", background: "white" }}
               >
-                <p>How-To</p>
+                <p>How do I start ❓</p>
               </div>
             </Link>
           </div>
@@ -87,6 +87,28 @@ const Navbar = () => {
                 style={{ color: "black", background: "white" }}
               >
                 <p>Blog</p>
+              </div>
+            </Link>
+          </div>
+
+          <div style={{ paddingLeft: "3px" }}>
+            <Link to="/dedicated-server" className="Link-tag">
+              <div
+                className="navbar-btn"
+                style={{ color: "black", background: "white" }}
+              >
+                <p>Dedicated Server</p>
+              </div>
+            </Link>
+          </div>
+
+          <div style={{ paddingLeft: "3px" }}>
+            <Link to="/buy-hardware" className="Link-tag">
+              <div
+                className="navbar-btn"
+                style={{ color: "black", background: "white" }}
+              >
+                <p>Buy Hardware</p>
               </div>
             </Link>
           </div>
@@ -239,14 +261,26 @@ const Navbar = () => {
                   <a href="https://wallet.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>👛 Wallet</p>
                   </a>
-                  
-                  <a
-                    href="https://wallet.gpux.ai/"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <p>Sign Up</p>
-                  </a>
+                  <Link to="/how-to" className="Link-tag">
+                    <div style={{textDecoration: "none"}}>
+                      <p>❓ How Do I Start</p>
+                    </div>
+                  </Link>
+                  <Link to="/blog/ai" className="Link-tag">
+                    <div style={{textDecoration: "none"}}>
+                      <p>Blog</p>
+                    </div>
+                  </Link>
+                  <Link to="/dedicated-server" className="Link-tag">
+                    <div style={{textDecoration: "none"}}>
+                      <p>Dedicated Server</p>
+                    </div>
+                  </Link>
+                  <Link to="/buy-hardware" className="Link-tag">
+                    <div style={{textDecoration: "none"}}>
+                      <p>Buy Hardware</p>
+                    </div>
+                  </Link>
                 </div>
                 {/*<div className="mobile-divider"></div>
                 <div className="mobile-menu-item">

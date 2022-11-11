@@ -8,10 +8,14 @@ const Header = () => {
     <div className="header web-align">
       <div className="left-header">
         <h1>
-          Save 80% on GPUs <span></span>
+          GPU Everything <span></span>
         </h1>
         <p>
-          Run anything <b>Dockerized</b>.
+          Run anything <b>Dockerized</b>
+          <br />
+          Run autoscale <b>Inference</b>
+          <br />
+          Save costs <b>50-90%</b>
           <br />
           (Limited Time: Free $3 for all new accounts)
         </p>
@@ -24,16 +28,14 @@ const Header = () => {
           >
             <button>Run GPUs 🏃</button>
           </a>
-          <Link
-            to="/how-to"
+          <a
+            href="https://calendly.com/gpux"
             style={{ textDecoration: "inherit", color: "inherit" }}
+            target="_blank"
+            rel="noreferrer"
           >
-            <button
-              style={{ color: "black", background: "white", border: "dotted" }}
-            >
-              Learn More
-            </button>
-          </Link>
+            <button style={{ color: "black", background: "white", border: "dotted" }}>Talk to a Founder ☎️</button>
+          </a>
         </div>
       </div>
       <motion.div
@@ -49,7 +51,7 @@ const Header = () => {
           </a>
           <a>
             <img src={openai} width="49" height="49" alt="MF - Groww" />
-            <p>Serverless API</p>
+            <p>Inference API</p>
           </a>
         </div>
         <div className="valign-wrapper">
@@ -60,7 +62,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Pay per Minute</p>
+            <p>Earn per Inference</p>
           </a>
           <a>
             <img
