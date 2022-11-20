@@ -114,14 +114,15 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="pod-template">
+      <div className="pod-template" style={{ marginTop: "80px" }}>
         <div className="header web-align">
           <div className="left-header">
             <h1>
               Run Docker <span></span>
             </h1>
             <p>
-              Use public DockerHub or push templates to our <b>private</b> storage.
+              Use public DockerHub or push templates to our <b>private</b>{" "}
+              storage.
             </p>
           </div>
           <motion.div
@@ -160,17 +161,8 @@ const Product = () => {
         </div>
       </div>
 
-
-      <div className="pod-template">
+      <div className="pod-template pod2" style={{ marginBottom: "100px" }}>
         <div className="header web-align">
-          <div className="left-header">
-            <h1>
-              Run Inference <span></span>
-            </h1>
-            <p>
-              Protect your model or earn per <b>public</b> request.
-            </p>
-          </div>
           <motion.div
             className="right-header"
             initial={{ y: "20px" }}
@@ -204,6 +196,14 @@ const Product = () => {
               </a>
             </div>
           </motion.div>
+          <div className="left-header">
+            <h1>
+              Run Inference <span></span>
+            </h1>
+            <p>
+              Protect your model or earn per <b>public</b> request.
+            </p>
+          </div>
         </div>
       </div>
     </>
