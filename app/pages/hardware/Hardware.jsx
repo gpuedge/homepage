@@ -15,7 +15,7 @@ export const meta = () => ({
 
 const Hardware = () => {
   return (
-    <div className="dedicated_container">
+    <div className="dedicated_container hardware">
       <div className="dedicated_header">
         <div className="dedicated_header_wrapper web-align">
           <div>

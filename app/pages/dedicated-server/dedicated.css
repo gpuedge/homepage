@@ -9,6 +9,10 @@
   height: 250px;
   margin-bottom: 40px;
 }
+.hardware .dedicated_header {
+  background-color: var(--quaternaryBg);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1010%26quot%3b)' fill='none'%3e%3cpath d='M235.09737230851866 159.62753994619644L264.15545038662185 195.51127793921955 303.4520183371049 133.9822918255532z' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M129.723%2c106.174C143.895%2c106.574%2c159.845%2c107.353%2c168.018%2c95.768C177.173%2c82.79%2c177.587%2c64.286%2c168.422%2c51.316C160.194%2c39.673%2c143.933%2c40.416%2c129.723%2c41.575C118.015%2c42.53%2c107.117%2c47.071%2c100.604%2c56.847C93.219%2c67.933%2c88.221%2c82.239%2c94.993%2c93.71C101.695%2c105.063%2c116.545%2c105.803%2c129.723%2c106.174' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1307.889%2c93.556C1319.475%2c93.741%2c1328.45%2c84.07%2c1333.479%2c73.631C1337.86%2c64.538%2c1335.667%2c54.46%2c1331.05%2c45.485C1325.875%2c35.425%2c1319.165%2c24.804%2c1307.889%2c23.89C1295.344%2c22.873%2c1282.74%2c29.834%2c1277.16%2c41.115C1272.031%2c51.485%2c1277.831%2c62.852%2c1283.68%2c72.834C1289.436%2c82.657%2c1296.505%2c93.374%2c1307.889%2c93.556' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M455.83197239310147 103.94108099812603L466.81210353411603 42.01482953661452 414.8297236310209 59.91379834176395z' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M668.439%2c187.19C677.519%2c186.849%2c685.852%2c181.79%2c690.003%2c173.707C693.843%2c166.229%2c691.797%2c157.472%2c687.369%2c150.327C683.209%2c143.615%2c676.331%2c139.184%2c668.439%2c138.914C660.026%2c138.626%2c651.819%2c141.964%2c647.121%2c148.949C641.8%2c156.861%2c639.231%2c167.111%2c643.874%2c175.439C648.611%2c183.937%2c658.717%2c187.555%2c668.439%2c187.19' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M927.7053401299045 44.23412054389071L932.2372473813275-20.575172565083562 867.4279542723533-25.107079816506626 862.8960470209302 39.702213292467654z' fill='rgba(68%2c 71%2c 91%2c 0.3)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1010'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
 .dedicated_header_wrapper {
   display: flex;
   align-items: center;
@@ -47,6 +51,10 @@
   box-shadow: rgba(152, 164, 255, 20%) 0px 0px 5px 0px,
     rgba(152, 164, 255, 20%) 0px 0px 1px 0px;
 }
+.hardware .dedicated_pricing_card {
+  background-color: var(--quaternaryBg);
+  border-top-color: var(--constantText);
+}
 .pricing_title {
   display: flex;
   align-items: center;
@@ -59,6 +67,9 @@
 .pricing_title h3 {
   text-align: center;
   color: var(--secondaryClr);
+}
+.hardware .pricing_title h3 {
+  color: var(--constantText);
 }
 .pricing_specs {
   color: var(--text);
@@ -103,10 +114,16 @@
   color: white;
   border: none;
 }
+.hardware .pricing_buy button {
+  background-color: var(--constantText);
+}
 .pricing_buy button:hover {
   background-color: var(--secondaryClr);
   color: white;
   cursor: pointer;
+}
+.hardware .pricing_buy button:hover {
+  background-color: var(--constantText120);
 }
 .pricing_buy p {
   font-size: 14px;
@@ -126,14 +143,19 @@
   text-align: center;
   color: var(--text);
 }
-.dedicated_pricing_table thead tr:hover {
-  background: none;
-}
 
 .dedicated_pricing_table tr:hover {
   background-color: var(--secondaryClr30);
 }
-
+.hardware .dedicated_pricing_table tr:hover {
+  background-color: var(--quaternaryBg);
+}
+.dedicated_pricing_table thead tr:hover {
+  background: none;
+}
+.hardware .dedicated_pricing_table thead tr:hover {
+  background: none;
+}
 .dedicated_pricing_table tbody tr:first-child td {
   border-color: var(--text);
 }
