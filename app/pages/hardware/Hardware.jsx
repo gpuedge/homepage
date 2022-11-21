@@ -7,9 +7,9 @@ import datacenter from "../../assets/datacenter.png";
 import { TiTick } from "react-icons/ti";
 
 export const meta = () => ({
-  title: "GPUX - Blog",
+  title: "GPUX - Hardware",
   description: `
-    GPUX is a distributed supercomputer. 
+    Why rent? Own! 
   `,
 });
 
@@ -19,11 +19,10 @@ const Hardware = () => {
       <div className="dedicated_header">
         <div className="dedicated_header_wrapper web-align">
           <div>
-            <h1>Buy hardware</h1>
+            <h1>Own your bare-metal</h1>
             <p>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              accusantium.
+              We provide express worldwide shipping, receive everything in 2 weeks.
             </p>
           </div>
           <div>
@@ -42,7 +41,7 @@ const Hardware = () => {
                 <div className="dedicated_pricing_card">
                   <div className="pricing_title">
                     <img src={A100} alt="" />
-                    <h3>A 100</h3>
+                    <h3>A100</h3>
                   </div>
                   <div className="pricing_specs">
                     <p>AMD EPYC 7252 (8 cores, 16 threads)</p>

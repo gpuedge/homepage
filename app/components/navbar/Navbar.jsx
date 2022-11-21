@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div style={{ paddingLeft: "3px" }}>
+          {/*<div style={{ paddingLeft: "3px" }}>
             <Link to="/buy-hardware" className="Link-tag">
               <div
                 className="navbar-btn"
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <p>Buy Hardware</p>
               </div>
             </Link>
-          </div>
+          </div>*/}
 
           {/*<div style={{paddingLeft: "3px"}}>
             <div className="navbar-btn" style={{color: "black", background: "white"}}>
@@ -276,11 +276,11 @@ const Navbar = () => {
                       <p>Dedicated Server</p>
                     </div>
                   </Link>
-                  <Link to="/buy-hardware" className="Link-tag">
+                  {/*<Link to="/buy-hardware" className="Link-tag">
                     <div style={{textDecoration: "none"}}>
                       <p>Buy Hardware</p>
                     </div>
-                  </Link>
+                  </Link>*/}
                 </div>
                 {/*<div className="mobile-divider"></div>
                 <div className="mobile-menu-item">

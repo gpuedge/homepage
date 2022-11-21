@@ -25,6 +25,7 @@ import WALLETEMAIL3 from "~/assets/app_ss/wallet_email3.jpg";
 import WALLETCREDITS1 from "~/assets/app_ss/wallet_credit1.png";
 import WALLETCREDITS2 from "~/assets/app_ss/wallet_credit2.png";
 import WALLETCREDITS3 from "~/assets/app_ss/wallet_credit3.png";
+import WALLETSIMPLE from "~/assets/app_ss/wallet_simple.png";
 
 import EXPLORERPOD from "~/assets/explorer_pod_1.png";
 import EXPLORERHUPYTER from "~/assets/explorer_pod_jupyter.png";
@@ -71,15 +72,11 @@ function ThePage() {
           <h1>Create a Wallet</h1>
           <div>
             <p className="blog-tips">
-              Payments are settled on the network using cryptographically signed
-              transactions.
-              <br /> Deposits to the wallet are done using Stripe.
-              <br />
-              By registering today you will receive $10 for free.{" "}
+              Receive $3 for free!{" "}
             </p>
             <br />
             <p className="blog-desc">
-              Create a wallet using <b>Email</b>:
+              Create a wallet using <b>Google</b>:
               <ol>
                 <li>
                   Go to{" "}
@@ -91,36 +88,15 @@ function ThePage() {
                     GPUX Wallet Page
                   </a>
                 </li>
-                <li>Using email authentication for ease of use.</li>
+                <li>Create a new Wallet</li>
               </ol>
             </p>
 
             <div className="blog-ss">
-              <img src={WALLETEMAIL1} alt="" />
-              <img src={WALLETEMAIL2} alt="" />
-              <img src={WALLETEMAIL3} alt="" />
+              <img style={{width: "430px"}} src={WALLETSIMPLE} alt="" />
             </div>
           </div>
           <br />
-          <br />
-          <div>
-            <p className="blog-desc">
-              Create a wallet using <b>Private Key</b>:
-              <ol>
-                <li>
-                  {" "}
-                  Use Private Key authentication and save your key for advanced
-                  usage.
-                </li>
-                <li>Click on Generate Private Key</li>
-              </ol>
-            </p>
-            <div className="blog-ss">
-              <img src={WALLETPKEY1} alt="" />
-              <img src={WALLETPKEY2} alt="" />
-              <img src={WALLETPKEY3} alt="" />
-            </div>
-          </div>
           <br />
           <div>
             <p className="blog-desc">
@@ -154,7 +130,7 @@ function ThePage() {
                 The wallet has a <b>Stripe Payment</b>.
                 <br />
                 Contact us if you want to pay with another method like{" "}
-                <b>WechatPay or crypto (DAI,USDC,BTC,ETH,SOL,NEAR).</b>
+                <b>WechatPay or crypto (BTC,USDT).</b>
               </p>
             </p>
 

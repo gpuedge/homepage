@@ -17,6 +17,8 @@ import podman from "~/assets/podman.png";
 import SDLOGO from "~/assets/sd_logo.jpg";
 import BLENDERLOGO from "~/assets/blender_icon_256x256.png";
 import JUPYTERLOGO from "~/assets/jupyter2.png";
+import MIDJOURNEY from "~/assets/midjourney.png";
+import MICROPHONE from "~/assets/microphone.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -172,27 +174,27 @@ const Product = () => {
             <div className="valign-wrapper">
               <a>
                 <img src={SDLOGO} width="49" height="49" alt="MF - Groww" />
-                <p>Stable Diffusion</p>
+                <p>SDiffusion v1.5</p>
               </a>
               <a>
                 <img
-                  src={BLENDERLOGO}
+                  src={MIDJOURNEY}
                   width="49"
                   height="49"
                   alt="MF - Groww"
                 />
-                <p>Blender</p>
+                <p>Midjourney v3</p>
               </a>
             </div>
             <div className="valign-wrapper">
               <a>
                 <img
-                  src={JUPYTERLOGO}
+                  src={MICROPHONE}
                   width="49"
                   height="49"
                   alt="MF - Groww"
                 />
-                <p>Jupyter Notebook</p>
+                <p>Whisper</p>
               </a>
             </div>
           </motion.div>
@@ -201,7 +203,7 @@ const Product = () => {
               Run Inference <span></span>
             </h1>
             <p>
-              Protect your model or earn per <b>public</b> request.
+              Deploy <b>private</b> model or earn per <b>public</b> request.
             </p>
           </div>
         </div>

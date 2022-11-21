@@ -16,9 +16,9 @@ export const links = () => {
 };
 
 export const meta = () => ({
-  title: "GPUX - Blog",
+  title: "GPUX - Hardware",
   description: `
-    GPUX is a distributed supercomputer. 
+    Why rent? Own!
   `,
 });
 
