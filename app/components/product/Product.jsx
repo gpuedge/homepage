@@ -71,19 +71,19 @@ const Product = () => {
             </tr>
             <tr>
               <td>RTX3060</td>
-              <td>$0.15</td>
+              <td>$0.10</td>
             </tr>
             <tr>
               <td>RTX3090</td>
-              <td>$0.45</td>
+              <td>$0.37</td>
             </tr>
             <tr>
               <td>A4000</td>
-              <td>$0.25</td>
+              <td>$0.33</td>
             </tr>
             <tr>
               <td>A100</td>
-              <td>$2.02</td>
+              <td>$1.30</td>
             </tr>
           </table>
 
