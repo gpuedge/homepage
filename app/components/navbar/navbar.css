@@ -248,3 +248,23 @@
     width: 100px;
   }
 }
+.news-banner{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  background: #fde590;
+  }
+  .news-banner p{
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .news-banner-link{
+    color:#000;
+    font-weight: 600;
+    margin-left: 6px;
+    text-decoration: underline;
+  }
