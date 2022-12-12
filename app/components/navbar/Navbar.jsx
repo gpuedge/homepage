@@ -61,6 +61,14 @@ const Navbar = () => {
   };
   //"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
   return (
+    <>
+    <div className="news-banner">
+      <p>🚀 Today we're joining @Cloudflare's Workers Launchpad! We're excited to continue building for scale with Workers. 🎉
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          <span className="news-banner-link">Read more</span>
+      </a>
+      </p>
+    </div>
     <div className="navbar web-align">
       <div className="navbar-item">
         <Link to="/">
@@ -303,7 +311,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+      </div>
+   </>
   );
 };
 
