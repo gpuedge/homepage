@@ -6,67 +6,21 @@ import Data from "./Data";
 import NavbarBtn from "./NavbarBtn";
 import { Link } from "@remix-run/react";
 
-async function setter_nodes(setNodes) {
-  const req = await fetch("https://wallet.gpux.ai/api/node/list");
-  var { nodes } = await req.json();
-  nodes = nodes
-    .map((n) => {
-      try {
-        n.url = n.addresses[0];
-        n.title = new URL(n.url).host;
-        n.desc = `(Bench: ? | CPU: ${n.resources.cpu_avail} | RAM: ${n.resources.ram_avail}G | GPU: ${n.resources.gpu_total.length})`;
-        return n;
-      } catch (err) {
-        return null;
-      }
-    })
-    .filter((n) => n);
-  var arm0 = {
-    url: "https://arm0.gpux.ai/",
-    title: "arm0.gpux.ai",
-    desc: "On-Request (Bench: ? | AARCH64 | CPU: 32 | RAM: 32G)",
-  };
-  nodes.push(arm0);
-  setNodes(nodes);
-}
-
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSuggest, setShowSuggest] = useState(false);
 
-  const [nodes, setNodes] = useState([]);
   const [text, setText] = useState("");
-  const menuItems = ["All", "Online"];
 
-  useEffect(() => {
-    setter_nodes(setNodes);
-  }, []);
-
-  const filterItem = (curcat) => {
-    const newItem = Data.filter((newVal) => {
-      return newVal.category === curcat;
-    });
-    setItem(newItem);
-  };
-  const onChangeHandler = (text) => {
-    let matches = [];
-    if (text.length > 0) {
-      matches = Data.filter((data) => {
-        const regex = new RegExp(`${text}`, "gi");
-        return data.title.match(regex);
-      });
-    }
-    setItem(matches);
-    setText(text);
-  };
   //"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
+    //58px 0 10px 10px
   return (
     <>
     <div className="news-banner" style={{color: "#fde590"}}>
       <p>🚀 Today we're joining 
         <a href="https://blog.cloudflare.com/launchpad-fall-22/" target="_blank" rel="noopener noreferrer">
-          <span className="news-banner-link">@Cloudflare's Launchpad</span>
-        </a>! We're excited to continue building for scale with Cloudflare. 🎉
+          <span className="news-banner-link">@Cloudflare's Launchpad!</span>
+        </a><span className="news-banner-long"> We're excited to continue building for scale with Cloudflare.</span> 🎉
       </p>
     </div>
     <div className="navbar web-align">

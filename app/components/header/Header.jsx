@@ -8,14 +8,12 @@ const Header = () => {
     <div className="header web-align">
       <div className="left-header">
         <h1>
-          GPU Everything <span></span>
+          Deploy 'X' Fast <span></span>
         </h1>
         <p>
           Run anything <b>Dockerized</b>
           <br />
           Run autoscale <b>Inference</b>
-          <br />
-          Save costs <b>50-90%</b>
           <br />
           (Limited Time: Free $3 for all new accounts)
         </p>
