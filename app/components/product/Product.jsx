@@ -55,10 +55,18 @@ function a11yProps(index) {
 
 const Product = () => {
   const [value, setValue] = React.useState(0);
+  const [priceTable, setPriceTable] = React.useState({gpu: {}});
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  React.useEffect(()=>
+    fetch("https://wallet.gpux.ai/api/node/price_table")
+    .then(response=> response.json())
+    .then(json=> setPriceTable(json.price_table))
+  , [])
+
   return (
     <>
       <div className="product_section web-align">
@@ -71,19 +79,19 @@ const Product = () => {
             </tr>
             <tr>
               <td>RTX3060</td>
-              <td>$0.10</td>
+              <td>${priceTable["gpu"]["geforce rtx 3060"] || 0.10}</td>
             </tr>
             <tr>
               <td>RTX3090</td>
-              <td>$0.37</td>
+              <td>${priceTable["gpu"]["geforce rtx 3090"] || 0.37}</td>
             </tr>
             <tr>
               <td>A4000</td>
-              <td>$0.33</td>
+              <td>${priceTable["gpu"]["a4000"] || 0.33}</td>
             </tr>
             <tr>
               <td>A100</td>
-              <td>$1.30</td>
+              <td>${priceTable["gpu"]["a100"] || 1.30}</td>
             </tr>
           </table>
 
@@ -94,15 +102,15 @@ const Product = () => {
             </tr>
             <tr>
               <td>1 CPU</td>
-              <td>$0.0063</td>
+              <td>${priceTable["cpu"] || 0.0063}</td>
             </tr>
             <tr>
               <td>1GB Ram</td>
-              <td>$0.0014</td>
+              <td>${priceTable["ram"] || 0.0014}</td>
             </tr>
             <tr>
               <td>GPUX Persistant S3 Storage (1GB)</td>
-              <td>$0.0000208 ($0.015 per month)</td>
+              <td>${priceTable["storage_s3"] || 0.0000208} ($0.015 per month)</td>
             </tr>
             <tr>
               <td>Storage Local</td>

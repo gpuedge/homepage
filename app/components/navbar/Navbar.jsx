@@ -13,7 +13,6 @@ const Navbar = () => {
   const [text, setText] = useState("");
 
   //"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
-    //58px 0 10px 10px
   return (
     <>
     <div className="news-banner" style={{color: "#fde590"}}>
