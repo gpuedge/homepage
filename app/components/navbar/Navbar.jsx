@@ -133,7 +133,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div style={{ paddingLeft: "3px" }}>
+          {/*<div style={{ paddingLeft: "3px" }}>
             <a
               href="https://docs.gpux.ai/"
               target="_blank"
@@ -157,7 +157,7 @@ const Navbar = () => {
                 <p>👛</p>
               </div>
             </a>
-          </div>
+          </div>*/}
         </div>
       </div>
 
@@ -216,12 +216,12 @@ const Navbar = () => {
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
 
-                  <a href="https://docs.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
+                  {/*<a href="https://docs.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>📜 Docs</p>
                   </a>
                   <a href="https://wallet.gpux.ai/" target="_blank" style={{textDecoration: "none"}}>
                     <p>👛 Wallet</p>
-                  </a>
+                  </a>*/}
                   <Link to="/how-to" className="Link-tag">
                     <div style={{textDecoration: "none"}}>
                       <p>❓ How Do I Start</p>

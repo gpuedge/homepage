@@ -100,8 +100,8 @@ const Footer = () => {
               </div>
               <div className="footer-col-3">
                 <div className="col-head">LINKS</div>
-                <p><a href="https://docs.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Documentation</a></p>
-                <p><a href="https://docs.gpux.ai/farm/welcome" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Become a Host</a></p>
+                {/*<p><a href="https://docs.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Documentation</a></p>
+                <p><a href="https://docs.gpux.ai/farm/welcome" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Become a Host</a></p>*/}
                 {/*<p>Build your App</p>*/}
                 <p><a href="https://explorer.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Explorer</a></p>
                 {/*<p>GPUX University</p>
