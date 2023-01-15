@@ -1,6 +1,8 @@
 import ANNIE from "~/assets/1647559287559.jpeg";
 import IVAN from "~/assets/1652316097723.jpeg";
 import HENRY from "~/assets/IMG_1906.png";
+import LinkedIn from "~/assets/linkedin.png";
+import WeChat from "~/assets/wechat.png";
 
 const Article = () => {
   return (
@@ -9,39 +11,48 @@ const Article = () => {
       <div className="card-container team-card">
         <div className="card-wrapper">
           <img style={{ borderRadius: "10%" }} width={260} src={ANNIE} alt="" />
-          <p>
-            Annie - Marketing
-            <br /> Meet her in Krakow
+          <div>
+            <p>Annie - Marketing</p>
+            <span>Meet her in Krakow</span>
             <br />
             <a
-              href="https://www.linkedin.com/in/anna-polishchuk-b671401b7"
+              href="httdivs://www.linkedin.com/in/anna-polishchuk-b671401b7"
               target="_blank"
+              rel="noreferrer"
             >
-              LinkedIn
+              <img src={LinkedIn} width="25px" alt="" />
             </a>
-          </p>
+          </div>
         </div>
         <div className="card-wrapper">
           <img style={{ borderRadius: "10%" }} width={260} src={IVAN} alt="" />
-          <p>
-            Ivan - Tech
-            <br /> Meet him in Toronto
+          <div>
+            <p> Ivan - Tech</p>
+            <span>Meet him in Toronto</span>
             <br />
-            <a href="https://www.linkedin.com/in/ivan-svirid/" target="_blank">
-              LinkedIn
+            <a
+              href="https://www.linkedin.com/in/ivan-svirid/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={LinkedIn} width="25px" alt="" />
             </a>
-          </p>
+          </div>
         </div>
         <div className="card-wrapper">
           <img style={{ borderRadius: "10%" }} width={260} src={HENRY} alt="" />
-          <p>
-            Henry - Operations
-            <br /> Meet him in Hefei
+          <div>
+            <p> Henry - Operations</p>
+            <span> Meet him in Hefei</span>
             <br />
-            <a href="weixin://dl/chat?henryduolaimifa" target="_blank">
-              WeChat
+            <a
+              href="weixin://dl/chat?henryduolaimifa"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={WeChat} width="25px" alt="" />
             </a>
-          </p>
+          </div>
         </div>
       </div>
       {/*<div className="view-article">

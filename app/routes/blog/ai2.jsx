@@ -1,12 +1,12 @@
-import Render from "~/pages/render/Render";
+import Ai from "~/pages/ai/Ai";
 
-import stylesAI from "~/pages/ai/ai.css";
+import stylesAI from "~/pages/blogStyle.css";
 export const links = () => {
   return [{ rel: "stylesheet", href: stylesAI }];
 };
 
 export default function Index() {
-  return <Render />;
+  return <Ai />;
 }
 
 export function ErrorBoundary({ error }) {

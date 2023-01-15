@@ -3,6 +3,7 @@
   display: flex;
   gap: 2rem;
   color: var(--text);
+  font-family: "Outfit", sans-serif;
 }
 
 .blog-container-left {
@@ -101,6 +102,7 @@
   background-color: rgb(237, 237, 237);
   padding: 4px;
   border-radius: 4px;
+  margin-right: 20px;
 }
 hr {
   margin: 20px 0;

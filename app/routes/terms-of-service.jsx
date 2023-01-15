@@ -5,7 +5,7 @@ import stylesNavbar from "~/components/navbar/navbar.css";
 import Navbar from "~/components/navbar/Navbar";
 import stylesFooter from "~/components/footer/footer.css";
 import Footer from "~/components/footer/Footer";
-import stylesAI from "~/pages/ai/ai.css";
+import stylesAI from "~/pages/blogStyle.css";
 
 import LEGAL_TOS from "~/assets/legal_tos.jpg";
 

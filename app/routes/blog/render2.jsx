@@ -1,12 +1,12 @@
-import Transcode from "~/pages/transcode/Transcode";
+import Render from "~/pages/render/Render";
 
-import stylesAI from "~/pages/ai/ai.css";
+import stylesAI from "~/pages/blogStyle.css";
 export const links = () => {
   return [{ rel: "stylesheet", href: stylesAI }];
 };
 
 export default function Index() {
-  return <Transcode />;
+  return <Render />;
 }
 
 export function ErrorBoundary({ error }) {

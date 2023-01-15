@@ -1,12 +1,12 @@
-import Ai from "~/pages/ai/Ai";
+import HomoEnc from "~/pages/homomorphic_enc/HomoEnc";
 
-import stylesAI from "~/pages/ai/ai.css";
+import stylesAI from "~/pages/blogStyle.css";
 export const links = () => {
   return [{ rel: "stylesheet", href: stylesAI }];
 };
 
 export default function Index() {
-  return <Ai />;
+  return <HomoEnc />;
 }
 
 export function ErrorBoundary({ error }) {
