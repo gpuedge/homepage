@@ -19,6 +19,11 @@ import Press from "~/components/press/Press";
 import stylesPress from "~/components/press/press.css";
 import Test from "~/components/test/Test";
 import stylesTest from "~/components/test/test.css";
+import ArrowUpIcon from "../components/ArrowUpIcon";
+import Client from "../components/client/client";
+import stylesClient from "../components/client/client.css";
+import BlogSection from "../components/blog/BlogSection";
+import BlogSectionStyle from "../components/blog/blogsection.css";
 
 export const links = () => {
   return [
@@ -31,6 +36,8 @@ export const links = () => {
     { rel: "stylesheet", href: stylesPress },
     { rel: "stylesheet", href: stylesTest },
     { rel: "stylesheet", href: stylesFooter },
+    { rel: "stylesheet", href: stylesClient },
+    { rel: "stylesheet", href: BlogSectionStyle },
   ];
 };
 
@@ -48,10 +55,13 @@ export default function Index() {
       <Header />
       <Product />
       <Showcase />
+      <Client />
+      <BlogSection />
       <Article />
       {/*<Press />
       <Test />*/}
       <Footer />
+      <ArrowUpIcon />
     </>
   );
 }

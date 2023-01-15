@@ -5,7 +5,7 @@ import stylesNavbar from "~/components/navbar/navbar.css";
 import Navbar from "~/components/navbar/Navbar";
 import stylesFooter from "~/components/footer/footer.css";
 import Footer from "~/components/footer/Footer";
-import stylesAI from "~/pages/ai/ai.css";
+import stylesAI from "~/pages/blogStyle.css";
 import AI_IMG from "~/assets/aii.jpg";
 /* import WALLETEMAIL from "~/assets/wallet_email.png";
 import WALLETPKEY from "~/assets/wallet_pkey.png";
@@ -182,7 +182,6 @@ function ThePage() {
           <div className="blog-ss blog-ss-wide">
             <img src={EXPLORERHUPYTER} alt="" />
           </div>
-
         </div>
       </div>
     </div>

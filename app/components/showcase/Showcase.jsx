@@ -3,6 +3,7 @@ import server2 from "~/assets/datacenter.png";
 import server3 from "~/assets/serverroom.png";
 import chat from "~/assets/chat.svg";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from 'framer-motion'
 
 const Showcase = () => {
   return (
@@ -55,8 +56,12 @@ const Showcase = () => {
           </div>
           <div className="showcase-top_right">
             <div className="top-right_two">
-              <div
+              <motion.div
                 className="showcase_server"
+                initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+                transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+                viewport={{ once: true }}
                 // onClick={() =>
                 //   (window.location = "https://github.com/gpuedge/farm/releases")
                 // }
@@ -79,7 +84,7 @@ const Showcase = () => {
                   </a>
                   {/* <BsArrowRight /> */}
                 </div>
-              </div>
+              </motion.div>
               {/* <div
                 style={{ marginTop: "30px", backgroundColor: "#66e3c4" }}
                 className="showcase_server"
@@ -143,8 +148,12 @@ const Showcase2 = () => {
       <div className="showcase-top showcase-top2">
         <div className="showcase-top_right">
           <div className="top-right_two" style={{ backgroundColor: "#EEF0FF" }}>
-            <div
+            <motion.div
               className="showcase_server"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+              viewport={{ once: true }}
               // onClick={() =>
               //   (window.location = "https://github.com/gpuedge/farm/releases")
               // }
@@ -167,7 +176,7 @@ const Showcase2 = () => {
                 </a>
                 {/* <BsArrowRight /> */}
               </div>
-            </div>
+            </motion.div>
             {/* <div
                 style={{ marginTop: "30px", backgroundColor: "#66e3c4" }}
                 className="showcase_server"

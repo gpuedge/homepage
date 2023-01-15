@@ -1,0 +1,28 @@
+---
+title: Homomorphic Encryption for secure training
+date: June 26, 2022
+---
+
+# {attributes.title}
+
+_{attributes.date}_
+
+![Alt text](https://i.ibb.co/30Mcs7R/livee.jpg "title")
+
+## Introduction
+
+Often we need to keep our training data and trained models private for compliance and as well as to preserve our companies secrets.
+
+For example in the field of healthcare we dont want our Cloud GPU providers to have our patients health care data stored cleartext in the server ram. A crafty system administrator could always copy the data for themselves or leak it publically.
+
+## Train on Encrypted Data
+
+With Homomorphic Encryption we not only keep the training data encrypted at rest, we also train our model on fully encrypted data, creating a fully encrypted training circuit. No sensitive data can leak out to the node provider whos hardware we are using.
+
+Read more about NVIDIA Federated Learning here plus check the GitHub example at the bottom of the article: [https://developer.nvidia.com/blog/federated-learning-with-homomorphic-encryption/](https://developer.nvidia.com/blog/federated-learning-with-homomorphic-encryption/)
+
+## Conclusion
+
+Take advantage of the low cost of GPUS on GPUX to train your neural network while meeting your compliance guidelines.
+
+Get started on [GPUX](https://gpux.ai/) today!

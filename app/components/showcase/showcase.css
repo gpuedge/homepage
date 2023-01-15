@@ -73,10 +73,10 @@
   color: var(--text);
 }
 .showcase_server a {
-  color: var(--text);
+  color: var(--constantSecondaryClr10);
   border: 1px solid var(--primaryClr10);
   border-radius: 5px;
-  background: var(--primaryBg);
+  background: var(--constantSecondaryClr180);
   padding: 7px 16px;
   cursor: pointer;
   text-decoration: none;
