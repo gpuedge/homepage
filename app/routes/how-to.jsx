@@ -123,7 +123,7 @@ function ThePage() {
             <p className="blog-desc">
               Add Credit to your <b>Wallet</b>:
               <ol>
-                <li>Click Buy Credits from Dashboard.</li>
+                <li>Click Buy Credits from App.</li>
                 <li>Choose how many credits to purchase and checkout.</li>
               </ol>
               <p className="blog-tips">
@@ -151,11 +151,11 @@ function ThePage() {
               <li>
                 Go to{" "}
                 <a
-                  href="https://explorer.gpux.ai/"
+                  href="https://app.gpux.ai/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GPUX Explorer Page
+                  GPUX App (V2)
                 </a>{" "}
                 and click Pod.
               </li>

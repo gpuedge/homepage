@@ -11,15 +11,15 @@ const Header = () => {
           Deploy 'X' Fast <span></span>
         </h1>
         <p>
-          Run anything <b>Dockerized</b>
+          Run AI training <b>Dockerized</b>
           <br />
-          Run autoscale <b>Inference</b>
+          Run autoscale <b>Inference (coming soon in V2)</b>
           <br />
-          (Limited Time: Free $3 for all new accounts)
+          (Limited Time: Drop below 0$ balance for all new accounts)
         </p>
         <div className="left-header-btns">
           <a
-            href="https://explorer.gpux.ai/"
+            href="https://app.gpux.ai/"
             style={{ textDecoration: "inherit", color: "inherit" }}
             target="_blank"
             rel="noreferrer"

@@ -61,11 +61,13 @@ const Product = () => {
     setValue(newValue);
   };
 
+  /*
   React.useEffect(()=>
     fetch("https://wallet.gpux.ai/api/node/price_table")
     .then(response=> response.json())
     .then(json=> setPriceTable(json.price_table))
   , [])
+  */
 
   return (
     <>
@@ -78,20 +80,16 @@ const Product = () => {
               <th>Price</th>
             </tr>
             <tr>
-              <td>RTX3060</td>
-              <td>${priceTable["gpu"]["geforce rtx 3060"] || 0.10}</td>
-            </tr>
-            <tr>
               <td>RTX3090</td>
-              <td>${priceTable["gpu"]["geforce rtx 3090"] || 0.37}</td>
+              <td>0.30</td>
             </tr>
             <tr>
-              <td>A4000</td>
-              <td>${priceTable["gpu"]["a4000"] || 0.33}</td>
+              <td>RTX4090</td>
+              <td>0.88</td>
             </tr>
             <tr>
-              <td>A100</td>
-              <td>${priceTable["gpu"]["a100"] || 1.30}</td>
+              <td>EPYC 128 Core</td>
+              <td>0.30</td>
             </tr>
           </table>
 
@@ -101,16 +99,8 @@ const Product = () => {
               <th>Price</th>
             </tr>
             <tr>
-              <td>1 CPU</td>
-              <td>${priceTable["cpu"] || 0.0063}</td>
-            </tr>
-            <tr>
-              <td>1GB Ram</td>
-              <td>${priceTable["ram"] || 0.0014}</td>
-            </tr>
-            <tr>
-              <td>GPUX Persistant S3 Storage (1GB)</td>
-              <td>${priceTable["storage_s3"] || 0.0000208} ($0.015 per month)</td>
+              <td>GPUX Persistant Storage (1GB)</td>
+              <td>0.0000208 ($0.015 per month)</td>
             </tr>
             <tr>
               <td>Storage Local</td>
@@ -131,8 +121,7 @@ const Product = () => {
               Run Docker <span></span>
             </h1>
             <p>
-              Use public DockerHub or push templates to our <b>private</b>{" "}
-              storage.
+              Use DockerHub and enjoy our support for <b>StarGZ</b> as well as <b>zstd:chunked</b>.{" "}
             </p>
           </div>
           <motion.div
@@ -211,7 +200,7 @@ const Product = () => {
               Run Inference <span></span>
             </h1>
             <p>
-              Deploy <b>private</b> model or earn per <b>public</b> request.
+              Deploy a <b>private</b> model or earn per <b>public</b> request.
             </p>
           </div>
         </div>

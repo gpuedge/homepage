@@ -47,7 +47,7 @@ export default function Index() {
       <Navbar />
       <Header />
       <Product />
-      <Showcase />
+      {/*<Showcase />*/}
       <Article />
       {/*<Press />
       <Test />*/}

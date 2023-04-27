@@ -19,8 +19,8 @@ const Footer = () => {
                 className="footer-logo"
               />
               <p className="address">GPUX Inc.</p>
-              <p className="address">88 Queens Quay W, Suite 2500</p>
-              <p className="address">Toronto, Canada</p>
+              <p className="address">18 King Street East • Suite 1400</p>
+              <p className="address">Toronto • Canada </p>
               <p className="underline">Contact Us</p>
               <div className="social">
                 {/*<a href="/" target="_blank">
@@ -103,7 +103,7 @@ const Footer = () => {
                 {/*<p><a href="https://docs.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Documentation</a></p>
                 <p><a href="https://docs.gpux.ai/farm/welcome" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Become a Host</a></p>*/}
                 {/*<p>Build your App</p>*/}
-                <p><a href="https://explorer.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>Explorer</a></p>
+                <p><a href="https://app.gpux.ai/" target="_blank" rel="noreferrer" style={{ textDecoration: "inherit", color: "inherit" }}>App (V2)</a></p>
                 {/*<p>GPUX University</p>
                 <p>Video Inspector</p>*/}
               </div>
