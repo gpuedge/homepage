@@ -88,15 +88,15 @@ const Footer = () => {
               </div>
               <div className="footer-col-3">
                 <div className="col-head">GPUX</div>
-                <Link className="Link-tag" to="/how-to">
+                {/*<Link className="Link-tag" to="/how-to">
                   <p className="container-related-work">How To</p>
-                </Link>
-                <Link className="Link-tag" to="/blog/ai">
+                </Link>*/}
+                <Link className="Link-tag" to="/blog/sdxl_50_faster">
                   <p className="container-related-work">Blog</p>
                 </Link>
-                <Link className="Link-tag" to="/company">
+                {/*<Link className="Link-tag" to="/company">
                   <p className="container-related-work">Company</p>
-                </Link>
+                </Link>*/}
               </div>
               <div className="footer-col-3">
                 <div className="col-head">LINKS</div>

@@ -213,3 +213,58 @@
     flex: 0;
   } */
 }
+
+
+
+.big-card {
+    width: 100%; /* Adjust to your desired width */
+    height: 655px; /* Adjust to your desired height */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+@media screen and (max-width: 900px) {
+  .big-card {
+      height: 515px; /* Adjust to your desired height */
+  }
+}
+
+.card-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+    padding-top: 3px;
+}
+
+.card-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #1e5799;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2989d8, #1e5799);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2989d8, #1e5799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tablink {
+    color: white;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.tablink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tablink.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+

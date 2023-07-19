@@ -19,6 +19,11 @@ import BLENDERLOGO from "~/assets/blender_icon_256x256.png";
 import JUPYTERLOGO from "~/assets/jupyter2.png";
 import MIDJOURNEY from "~/assets/midjourney.png";
 import MICROPHONE from "~/assets/microphone.png";
+import BLOG_SDXL from "~/assets/sdxl.jpg";
+import S_COLD_START from "~/assets/1s_cold_start.jpg";
+import VOLUME from "~/assets/volume.jpg";
+import REBAR from "~/assets/rebar.jpg";
+import LAIN from "~/assets/lain.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,6 +61,7 @@ function a11yProps(index) {
 const Product = () => {
   const [value, setValue] = React.useState(0);
   const [priceTable, setPriceTable] = React.useState({gpu: {}});
+  const [activeTab, setActiveTab] = React.useState('all');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -72,24 +78,101 @@ const Product = () => {
   return (
     <>
       <div className="product_section web-align">
-        <h2 className="product_heading">Price per Hour</h2>
+        <h2 className="product_heading" style={{marginTop: "3px"}}>Blog</h2>
+      <div className="tab-nav">
+        <ul>
+          <li className={activeTab === 'all' ? "tab-item active" : "tab-item"} onClick={() => setActiveTab('all')}>All</li>
+          <li className={activeTab === 'releases' ? "tab-item active" : "tab-item"} onClick={() => setActiveTab('releases')}>Releases</li>
+          <li className={activeTab === 'how-to' ? "tab-item active" : "tab-item"} onClick={() => setActiveTab('how-to')}>How-To</li>
+          <li className={activeTab === 'case-study' ? "tab-item active" : "tab-item"} onClick={() => setActiveTab('case-study')}>Case Study</li>
+          <li className={activeTab === 'ai-technology' ? "tab-item active" : "tab-item"} onClick={() => setActiveTab('ai-technology')}>AI Technology</li>
+        </ul>
+      </div>
+
+      <div className="tab-container">
+        {/* You can add your content for each tab in the sections below */}
+        {activeTab === 'all' && (
+
+          <div className="blog-cards-container">
+            <div className="blog-card">
+              <img src={BLOG_SDXL} alt="blog-post-title1" />
+              <div className="blog-info">
+                <h4 className="blog-date">July 19, 2023</h4>
+                
+                <h2 className="blog-title">
+                  <a href="/blog/sdxl_50_faster" target="_blank" rel="noopener noreferrer">
+                    Make StableDiffusionXL 50% faster on RTX 4090
+                  </a>
+                </h2>
+                
+              </div>
+            </div>
+            
+            {/*<div className="blog-card">
+              <img src="blog-post-image-url2" alt="blog-post-title2" />
+              <div className="blog-info">
+                <h4 className="blog-date">Date of Post2</h4>
+                <h2 className="blog-title">Blog Post Title2</h2>
+              </div>
+            </div>
+            <div className="blog-card">
+              <img src="blog-post-image-url2" alt="blog-post-title2" />
+              <div className="blog-info">
+                <h4 className="blog-date">Date of Post2</h4>
+                <h2 className="blog-title">Blog Post Title2</h2>
+              </div>
+            </div>
+
+            <div className="blog-card">
+              <img src="blog-post-image-url2" alt="blog-post-title2" />
+              <div className="blog-info">
+                <h4 className="blog-date">Date of Post2</h4>
+                <h2 className="blog-title">Blog Post Title2</h2>
+              </div>
+            </div>*/}
+          </div>
+
+        )}
+        {activeTab === 'releases' && (<div/>
+        )}
+        {activeTab === 'how-to' && (<div/>
+        )}
+        {activeTab === 'case-study' && (<div/>
+        )}
+        {activeTab === 'ai-technology' && (
+          <div className="blog-cards-container">
+            <div className="blog-card">
+              <img src={BLOG_SDXL} alt="blog-post-title1" />
+              <div className="blog-info">
+                <h4 className="blog-date">July 19, 2023</h4>
+                
+                <h2 className="blog-title">
+                  <a href="LINK_TO_BLOG_ENTRY" target="_blank" rel="noopener noreferrer">
+                    Make StableDiffusionXL 50% faster on RTX 4090
+                  </a>
+                </h2>
+                
+              </div>
+            </div>
+            
+          </div>
+        )}
+        </div>
+      </div>
+
+      <div className="product_section web-align">
+        <h2 className="product_heading">Price</h2>
         <div className="tab-container">
           <table>
             <tr>
               <th>Card Name</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>RTX3090</td>
-              <td>0.30</td>
+              <th>p/Hour (Cloud GPU)</th>
+              <th>p/Millisecond (Inference)</th>
             </tr>
             <tr>
               <td>RTX4090</td>
-              <td>0.88</td>
-            </tr>
-            <tr>
-              <td>EPYC 128 Core</td>
-              <td>0.30</td>
+              <td>$ 0.63</td>
+              <td>$ 0.000000385</td>
             </tr>
           </table>
 
@@ -114,6 +197,54 @@ const Product = () => {
         </div>
       </div>
 
+
+
+      <div className="pod-template pod2">
+        <div className="header web-align">
+          <motion.div
+            className="right-header"
+            initial={{ y: "20px" }}
+            animate={{ y: "0px" }}
+            transition={{ duration: 1 }}
+          >
+            <div className="valign-wrapper">
+              <a>
+                <img src={S_COLD_START} width="69" height="69" />
+                <p>1s Cold Start</p>
+              </a>
+              <a>
+                <img src={VOLUME} width="69" height="69" />
+                <p>ReadWrite Volumes</p>
+              </a>
+            </div>
+            <div className="valign-wrapper">
+              <a>
+                <img
+                  src={LAIN}
+                  width="69"
+                  height="69"
+                />
+                <p>ReBar+P2P</p>
+              </a>
+            </div>
+          </motion.div>
+          <div className="left-header">
+            <h1>
+              The Right Fit <span></span>
+            </h1>
+            <p>
+              Nike only began crafting women's cleats in 2023, addressing the crucial anatomical 
+              differences that unisex cleats had previously overlooked.
+
+              Much like footwear, machine learning workloads need the <b>right fit</b>. 
+              Discover it at GPUX.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
       <div className="pod-template" style={{ marginTop: "80px" }}>
         <div className="header web-align">
           <div className="left-header">
@@ -121,7 +252,7 @@ const Product = () => {
               Run Docker <span></span>
             </h1>
             <p>
-              Use DockerHub and enjoy our support for <b>StarGZ</b> as well as <b>zstd:chunked</b>.{" "}
+              Load your favorite images such as AUTOMATIC1111, nytimes/blender or JupyterNotebook.{" "}
             </p>
           </div>
           <motion.div
@@ -171,8 +302,14 @@ const Product = () => {
             <div className="valign-wrapper">
               <a>
                 <img src={SDLOGO} width="49" height="49" alt="MF - Groww" />
-                <p>SDiffusion v1.5</p>
+                <p>StableDiffusion</p>
               </a>
+              <a>
+                <img src={SDLOGO} width="49" height="49" alt="MF - Groww" />
+                <p>SDXL0.9</p>
+              </a>
+            </div>
+            <div className="valign-wrapper">
               <a>
                 <img
                   src={MIDJOURNEY}
@@ -180,10 +317,8 @@ const Product = () => {
                   height="49"
                   alt="MF - Groww"
                 />
-                <p>Midjourney v3</p>
+                <p>AlpacaLLM</p>
               </a>
-            </div>
-            <div className="valign-wrapper">
               <a>
                 <img
                   src={MICROPHONE}
@@ -200,7 +335,7 @@ const Product = () => {
               Run Inference <span></span>
             </h1>
             <p>
-              Deploy a <b>private</b> model or earn per <b>public</b> request.
+              Sell requests on your <b>private</b> model to other organizations.
             </p>
           </div>
         </div>
@@ -265,7 +400,7 @@ const Product2 = () => {
                     dataset or run a graphical game + setup a RL environment. No
                     spot interruption.
                   </div>
-                  <Link to="/blog/ai" className="Link-tag">
+                  <Link to="/blog/sdxl_50_faster" className="Link-tag">
                     <button className="product-btn">Explore AI</button>
                   </Link>
                 </div>

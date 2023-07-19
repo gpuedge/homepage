@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import AI_IMG from "~/assets/aii.jpg";
+import BLOG_SDXL from "~/assets/sdxl.jpg";
 import BlogRightMenu from "~/components/blog/BlogRightMenu";
 
 export const meta = () => ({
@@ -16,10 +17,11 @@ const Ai = () => {
       <div className="blog-container-left">
         <div className="blog-container-wrapper">
           <h1 className="blog-title">AI with Distributed Learning</h1>
-          <span className="blog-small-text">⚡Trending</span>
+          <span className="blog-small-text">⚡AI Technology</span>
           <img src={AI_IMG} alt="" />
           <hr />
           <h1>Introduction</h1>
+
           <p className="blog-desc">
             When building machine learning models, we often come across tasks 
             that would be more efficient and effective if they could be 
