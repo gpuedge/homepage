@@ -160,7 +160,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="product_section web-align">
+      {/*<div className="product_section web-align">
         <h2 className="product_heading">Price</h2>
         <div className="tab-container">
           <table>
@@ -195,7 +195,7 @@ const Product = () => {
             </tr>
           </table>
         </div>
-      </div>
+      </div>*/}
 
 
 
@@ -224,7 +224,7 @@ const Product = () => {
                   width="69"
                   height="69"
                 />
-                <p>ReBar+P2P</p>
+                <p>P2P</p>
               </a>
             </div>
           </motion.div>
@@ -245,7 +245,7 @@ const Product = () => {
 
 
 
-      <div className="pod-template" style={{ marginTop: "80px" }}>
+      {/*<div className="pod-template" style={{ marginTop: "80px" }}>
         <div className="header web-align">
           <div className="left-header">
             <h1>
@@ -289,7 +289,7 @@ const Product = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div>*/}
 
       <div className="pod-template pod2" style={{ marginBottom: "100px" }}>
         <div className="header web-align">

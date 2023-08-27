@@ -19,7 +19,7 @@ const Navbar = () => {
       <p>🚀 April 20th, 2023 - 
         <a href="https://blog.cloudflare.com/launchpad-fall-22/" target="_blank" rel="noopener noreferrer">
           <span className="news-banner-link">V2 is launched!</span>
-        </a><span className="news-banner-long"> Shared Instance Storage, ReBar+P2P support, 1s cold starts! </span> 🎉
+        </a><span className="news-banner-long"> 1s starts from cold! </span> 🎉
       </p>
     </div>
     <div className="navbar web-align">
@@ -81,7 +81,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>*/}
-          <div style={{ paddingLeft: "9px" }}>
+          {/*<div style={{ paddingLeft: "9px" }}>
             <a
               href="https://app.gpux.ai/"
               target="_blank"
@@ -102,7 +102,7 @@ const Navbar = () => {
                 </div>
               </div>
             </a>
-          </div>
+          </div>*/}
 
           <div style={{ paddingLeft: "3px" }}>
             <a
@@ -206,11 +206,11 @@ const Navbar = () => {
                 </div>
                 <div className="mobile-login-div">
                   <p>GPUX</p>
-                  <div className="navbar-btn">
+                  {/*<div className="navbar-btn">
                     <a href="https://app.gpux.ai" target="_blank">
                       <p>Go to App</p>
                     </a>
-                  </div>
+                  </div>*/}
                 </div>
               </div>
               <div className="mobile-menu-bottom">

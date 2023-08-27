@@ -16,8 +16,8 @@ const Header = () => {
           Deploy 'AI' Fast <span></span>
         </h1>
         <p>
-          Run Cloud <b>GPUs</b>
-          <br />
+          {/*Run Cloud <b>GPUs</b>
+          <br />*/}
           Run Serverless <b>Inference</b>
         </p>
         <div className="left-header-btns">

@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 import AI_IMG from "~/assets/aii.jpg";
-import BLOG_SDXL from "~/assets/sdxl.jpg";
 import BlogRightMenu from "~/components/blog/BlogRightMenu";
 
 export const meta = () => ({
